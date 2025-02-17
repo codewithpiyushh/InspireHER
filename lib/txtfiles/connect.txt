@@ -1,0 +1,283 @@
+import 'package:flutter/material.dart';
+
+class ConnectScreen extends StatelessWidget {
+  const ConnectScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Align(
+            alignment: Alignment.centerRight, // Aligns icon to the right
+            child: Padding(
+              padding: EdgeInsets.only(top: 5), // Moves the icon down
+              child: Icon(Icons.chat_bubble_outline,
+                  size: 24, color: Colors.black),
+            ),
+          ),
+        ),
+        const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 16.0),
+          child: Text(
+            'Connect',
+            style: TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
+            ),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: const [
+                  Text(
+                    'Top Mentor',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.black,
+                    ),
+                  ),
+                  Text(
+                    'SEE ALL >',
+                    style: TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w800,
+                      color: Color.fromARGB(255, 87, 156, 241),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 16),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  _buildMentorCard('Shanti', 'assets/image11.jpg'),
+                  _buildMentorCard('Komal', 'assets/image6.jpg'),
+                  _buildMentorCard('Meena', 'assets/image9.jpg'),
+                  _buildMentorCard('Karan', 'assets/image10.jpg'),
+                ],
+              ),
+            ],
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Text(
+                'How we can help you?',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.black,
+                ),
+              ),
+              const SizedBox(height: 16),
+              Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      height: 100,
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Colors.black),
+                        borderRadius: BorderRadius.circular(20),
+                        color: const Color.fromARGB(255, 140, 197, 141),
+                      ),
+                      child: Center(
+                        child: Padding(
+                          // Add Padding
+                          padding: const EdgeInsets.only(
+                              bottom: 40.0), // Adjust the value (8.0)
+                          child: Text(
+                            'Connect With your\nField Mentor',
+                            style: const TextStyle(
+                              color: Colors.black,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 16),
+                  Expanded(
+                    child: Container(
+                      height: 100,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black),
+                          borderRadius: BorderRadius.circular(20),
+                          color: const Color.fromARGB(255, 104, 194, 251)),
+                      child: Center(
+                        child: Padding(
+                          padding: const EdgeInsets.only(
+                              bottom: 50.0), // Adjust this value
+                          child: Text(
+                            'Video Consultation',
+                            style: const TextStyle(
+                              color: Color.fromARGB(255, 0, 0, 0),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 16),
+              Container(
+                height: 50,
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black),
+                    borderRadius: BorderRadius.circular(20),
+                    color: const Color.fromARGB(255, 231, 228, 228)),
+                child: const Center(
+                  child: Text(
+                    'Connect with our\nexperts',
+                    style: TextStyle(
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: const [
+                  Text(
+                    'Related Blogs',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.black,
+                    ),
+                  ),
+                  Text(
+                    'Read All',
+                    style: TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w800,
+                      color: Color.fromARGB(255, 87, 156, 241),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 16),
+              _buildBlogItem(
+                'From Sunrise to Harvest: Daily Stories from the Field',
+                'Kavita Singh',
+                'assets/image7.jpg',
+              ),
+              _buildBlogItem(
+                'From Grass to Glass: Insights for Efficient Milk Production',
+                'Renu Dalal',
+                'assets/image2.jpg',
+              ),
+              _buildBlogItem(
+                'Cream of the Crop: Tips to Boost Dairy Productivity',
+                'Ritu Kalonia',
+                'assets/image3.jpeg',
+              ),
+              _buildBlogItem(
+                'The Daily Moo: Your Guide to Thriving in Dairy Farming',
+                'Sanjay Singh',
+                'assets/image4.jpg',
+              ),
+              _buildBlogItem(
+                'From Pasture to Profit: Maximizing Your Dairy Farm\'s Potential',
+                'Deepak kumar',
+                'assets/image5.webp',
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildMentorCard(String name, String imagePath) {
+    return Column(
+      children: [
+        Container(
+          width: 80,
+          height: 70,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20),
+            image: DecorationImage(
+              image: AssetImage(imagePath),
+              fit: BoxFit.cover,
+            ),
+          ),
+        ),
+        const SizedBox(height: 8),
+        Text(
+          name,
+          style: const TextStyle(
+            fontSize: 13,
+            fontWeight: FontWeight.w600,
+            color: Colors.black,
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildBlogItem(String title, String author, String imagePath) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 8.0),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            width: 100,
+            height: 70,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              image: DecorationImage(
+                image: AssetImage(imagePath),
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+          const SizedBox(width: 16),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  title,
+                  style: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.black,
+                  ),
+                ),
+                Text(
+                  author,
+                  style: const TextStyle(
+                    fontSize: 14,
+                    color: Colors.grey,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}

@@ -1,0 +1,357 @@
+import 'package:flutter/material.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+
+class LearnScreen extends StatefulWidget {
+  const LearnScreen({super.key});
+
+  @override
+  State<LearnScreen> createState() => _LearnScreenState();
+}
+
+class _LearnScreenState extends State<LearnScreen> {
+  final videoURL = "https://www.youtube.com/watch?v=69dCjNmj5H0";
+  late YoutubePlayerController _controller;
+  String? videoId;
+
+  final List<Blog> blogs = [
+    Blog(
+      title: 'From Sunrise to Harvest: Daily Stories from the Field',
+      author: 'Kavita Singh',
+      imagePath: 'assets/image7.jpg',
+    ),
+    Blog(
+      title: 'From Grass to Glass: Insights for Efficient Milk Production',
+      author: 'Renu Dalal',
+      imagePath: 'assets/image2.jpg',
+    ),
+    Blog(
+      title: 'Cream of the Crop: Tips to Boost Dairy Productivity',
+      author: 'Ritu Kalonia',
+      imagePath: 'assets/image3.jpeg',
+    ),
+    Blog(
+      title: 'The Daily Moo: Your Guide to Thriving in Dairy Farming',
+      author: 'Sanjay Singh',
+      imagePath: 'assets/image4.jpg',
+    ),
+    Blog(
+      title: 'From Pasture to Profit: Maximizing Your Dairy Farm\'s Potential',
+      author: 'Deepak Kumar',
+      imagePath: 'assets/image5.webp',
+    ),
+  ];
+
+  @override
+  void initState() {
+    super.initState();
+    videoId = YoutubePlayer.convertUrlToId(videoURL);
+    if (videoId != null) {
+      _controller = YoutubePlayerController(
+        initialVideoId: videoId!,
+        flags: const YoutubePlayerFlags(
+          autoPlay: false,
+          mute: false,
+          showLiveFullscreenButton: false,
+        ),
+      );
+    }
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      'Learn',
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    GestureDetector(
+                      onTap: () {
+                        _showMessageBottomSheet(context);
+                      },
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 16, vertical: 12),
+                        decoration: BoxDecoration(
+                          color: Colors.grey[100],
+                          borderRadius: BorderRadius.circular(25),
+                        ),
+                        child: Row(
+                          children: [
+                            Icon(Icons.mic, color: Colors.grey[600]),
+                            const SizedBox(width: 12),
+                            Text(
+                              'Write your message',
+                              style: TextStyle(color: Colors.grey[600]),
+                            ),
+                            const Spacer(),
+                            Icon(Icons.send, color: Colors.grey[600]),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 20),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text(
+                          'Financial Courses',
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {},
+                          child: const Text('SEE ALL'),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 10),
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        children: [
+                          _buildChip('All', true),
+                          _buildChip('Financial Literacy', false),
+                          _buildChip('Micro-Investment', false),
+                          _buildChip('Credit use', false),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 20),
+              if (videoId != null)
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(12),
+                        child: YoutubePlayer(
+                          controller: _controller,
+                          showVideoProgressIndicator: true,
+                          progressIndicatorColor: Colors.amber,
+                          progressColors: const ProgressBarColors(
+                            playedColor: Colors.amber,
+                            handleColor: Colors.amberAccent,
+                          ),
+                          onReady: () {
+                            print('Player is ready.');
+                          },
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              const SizedBox(height: 20),
+              BlogSection(blogs: blogs),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildChip(String label, bool isSelected) {
+    return Container(
+      margin: const EdgeInsets.only(right: 8),
+      child: Chip(
+        label: Text(
+          label,
+          style: TextStyle(
+            color: isSelected ? Colors.white : Colors.black,
+          ),
+        ),
+        backgroundColor: isSelected ? Colors.green : Colors.grey[200],
+      ),
+    );
+  }
+
+  void _showMessageBottomSheet(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (context) => const MessageBottomSheet(),
+    );
+  }
+}
+
+class MessageBottomSheet extends StatelessWidget {
+  const MessageBottomSheet({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: MediaQuery.of(context).size.height * 0.9,
+      decoration: const BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      child: Column(
+        children: [
+          const SizedBox(height: 12),
+          Container(
+            width: 40,
+            height: 4,
+            decoration: BoxDecoration(
+              color: Colors.grey[300],
+              borderRadius: BorderRadius.circular(2),
+            ),
+          ),
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                children: [
+                  const Text(
+                    'New Message',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const Spacer(),
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    decoration: BoxDecoration(
+                      color: Colors.grey[100],
+                      borderRadius: BorderRadius.circular(25),
+                    ),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        hintText: 'Type your message...',
+                        border: InputBorder.none,
+                        suffixIcon: Icon(Icons.send, color: Colors.grey[600]),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class Blog {
+  final String title;
+  final String author;
+  final String imagePath;
+
+  Blog({required this.title, required this.author, required this.imagePath});
+}
+
+class BlogSection extends StatelessWidget {
+  final List<Blog> blogs;
+
+  const BlogSection({super.key, required this.blogs});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(16.0),
+      child: SizedBox(
+        width: double.infinity,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const Text(
+                  'Related Blogs',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.black,
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    // TODO: Implement "Read All" navigation
+                  },
+                  child: const Text(
+                    'Read All',
+                    style: TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w800,
+                      color: Color.fromARGB(255, 87, 156, 241),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 16),
+            Column(
+              children: blogs.map((blog) {
+                return _buildBlogItem(blog.title, blog.author, blog.imagePath);
+              }).toList(),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildBlogItem(String title, String author, String imagePath) {
+    return Card(
+      margin: const EdgeInsets.only(bottom: 12),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+      elevation: 3,
+      child: ListTile(
+        contentPadding: const EdgeInsets.all(12),
+        leading: ClipRRect(
+          borderRadius: BorderRadius.circular(8),
+          child:
+              Image.asset(imagePath, width: 60, height: 60, fit: BoxFit.cover),
+        ),
+        title: Text(
+          title,
+          style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
+        ),
+        subtitle: Text(
+          'By $author',
+          style: const TextStyle(fontSize: 12, color: Colors.grey),
+        ),
+        onTap: () {
+          // Implement navigation to blog details screen
+        },
+      ),
+    );
+  }
+}

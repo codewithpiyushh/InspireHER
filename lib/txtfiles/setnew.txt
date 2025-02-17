@@ -1,0 +1,231 @@
+import 'dart:convert';
+import 'package:flutter/material.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:location/location.dart';
+import 'package:http/http.dart' as http;
+
+class GoogleMapScreen extends StatefulWidget {
+  const GoogleMapScreen({super.key});
+
+  @override
+  _GoogleMapFlutterState createState() => _GoogleMapFlutterState();
+}
+
+class _GoogleMapFlutterState extends State<GoogleMapScreen> {
+  final LatLng odishaCenter = const LatLng(20.9517, 85.0985);
+  late GoogleMapController _controller;
+  LatLng? _currentLocation;
+  List<Map<String, dynamic>> _businessResults = [];
+
+  final String apiKey =
+      "AIzaSyAGPhUQZJ6DQgx3dAHsvH-f5Qw9dd6VW98"; // 🔥 Replace with your API key
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    _askLocationPreference();
+  }
+
+  /// ✅ Ask user to choose between precise or approximate location
+  Future<void> _askLocationPreference() async {
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      bool isPrecise = await _showLocationDialog();
+      setState(() {});
+      _getUserLocation(isPrecise);
+    });
+  }
+
+  /// ✅ Show dialog for location accuracy
+  Future<bool> _showLocationDialog() async {
+    return await showDialog<bool>(
+          context: context,
+          builder: (BuildContext context) {
+            return AlertDialog(
+              title: const Text("Choose Location Accuracy"),
+              content: const Text(
+                  "Would you like to use precise or approximate location?"),
+              actions: [
+                TextButton(
+                    onPressed: () => Navigator.of(context).pop(false),
+                    child: const Text("Approximate")),
+                TextButton(
+                    onPressed: () => Navigator.of(context).pop(true),
+                    child: const Text("Precise")),
+              ],
+            );
+          },
+        ) ??
+        false;
+  }
+
+  /// ✅ Fetch user's location based on preference
+  Future<void> _getUserLocation(bool isPrecise) async {
+    Location location = Location();
+    bool serviceEnabled = await location.serviceEnabled();
+    if (!serviceEnabled) {
+      serviceEnabled = await location.requestService();
+      if (!serviceEnabled) return;
+    }
+
+    PermissionStatus permission = await location.hasPermission();
+    if (permission == PermissionStatus.denied) {
+      permission = await location.requestPermission();
+      if (permission != PermissionStatus.granted) return;
+    }
+
+    LocationData locationData = await location.getLocation();
+    LatLng userLatLng = LatLng(locationData.latitude!, locationData.longitude!);
+
+    if (!isPrecise) {
+      // If user chooses Approximate, round the coordinates
+      userLatLng = LatLng(
+        double.parse(userLatLng.latitude.toStringAsFixed(1)),
+        double.parse(userLatLng.longitude.toStringAsFixed(1)),
+      );
+    }
+
+    setState(() {
+      _currentLocation = userLatLng;
+    });
+
+    _controller.animateCamera(CameraUpdate.newLatLngZoom(userLatLng, 12));
+  }
+
+  /// ✅ Function to search for businesses near user's location
+  Future<void> searchNearbyBusiness(String businessType) async {
+    if (_currentLocation == null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text("Location not available, try again.")),
+      );
+      return;
+    }
+
+    final url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
+        "?location=${_currentLocation!.latitude},${_currentLocation!.longitude}"
+        "&radius=5000"
+        "&type=$businessType"
+        "&key=$apiKey";
+
+    final response = await http.get(Uri.parse(url));
+
+    if (response.statusCode == 200) {
+      final data = json.decode(response.body);
+      List<Map<String, dynamic>> results = [];
+
+      for (var place in data['results']) {
+        results.add({
+          "name": place['name'],
+          "address": place['vicinity'],
+          "rating": place['rating'] ?? "N/A",
+        });
+      }
+
+      setState(() {
+        _businessResults = results;
+      });
+
+      _showResultsSheet();
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text("Failed to fetch places.")),
+      );
+    }
+  }
+
+  /// ✅ Show Bottom Sheet with search results
+  void _showResultsSheet() {
+    showModalBottomSheet(
+      context: context,
+      builder: (context) {
+        return Container(
+          padding: const EdgeInsets.all(16),
+          child: _businessResults.isEmpty
+              ? const Center(child: Text("No results found"))
+              : ListView.builder(
+                  itemCount: _businessResults.length,
+                  itemBuilder: (context, index) {
+                    var place = _businessResults[index];
+                    return ListTile(
+                      title: Text(place['name']),
+                      subtitle: Text("📍 ${place['address']}"),
+                      trailing: Text("⭐ ${place['rating']}"),
+                    );
+                  },
+                ),
+        );
+      },
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text("Setup")),
+      body: Stack(
+        children: [
+          /// ✅ Google Map
+          GoogleMap(
+            initialCameraPosition: CameraPosition(
+              target: _currentLocation ?? odishaCenter,
+              zoom: 7.0,
+            ),
+            onMapCreated: (controller) {
+              _controller = controller;
+            },
+            markers: _currentLocation != null
+                ? {
+                    Marker(
+                      markerId: const MarkerId("current_location"),
+                      position: _currentLocation!,
+                      infoWindow: const InfoWindow(title: "Your Location"),
+                    )
+                  }
+                : {},
+          ),
+
+          /// ✅ Draggable Bottom Sheet
+          DraggableScrollableSheet(
+            initialChildSize: 0.25,
+            minChildSize: 0.25,
+            maxChildSize: 0.6,
+            builder: (context, scrollController) {
+              return Container(
+                decoration: const BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(20),
+                    topRight: Radius.circular(20),
+                  ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black26,
+                      blurRadius: 10,
+                      spreadRadius: 2,
+                    ),
+                  ],
+                ),
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  children: [
+                    const Text("Search Nearby Places",
+                        style: TextStyle(
+                            fontSize: 18, fontWeight: FontWeight.bold)),
+                    const SizedBox(height: 10),
+                    ElevatedButton(
+                      onPressed: () => searchNearbyBusiness("restaurant"),
+                      child: const Text("Find Restaurants Nearby"),
+                    ),
+                    ElevatedButton(
+                      onPressed: () => searchNearbyBusiness("hospital"),
+                      child: const Text("Find Hospitals Nearby"),
+                    ),
+                  ],
+                ),
+              );
+            },
+          ),
+        ],
+      ),
+    );
+  }
+}

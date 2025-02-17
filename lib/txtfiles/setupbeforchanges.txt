@@ -1,0 +1,315 @@
+import 'dart:convert';
+import 'package:flutter/material.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:location/location.dart';
+import 'package:http/http.dart' as http;
+import 'package:shared_preferences/shared_preferences.dart';
+
+class GoogleMapScreen extends StatefulWidget {
+  const GoogleMapScreen({super.key});
+
+  @override
+  _GoogleMapFlutterState createState() => _GoogleMapFlutterState();
+}
+
+class _GoogleMapFlutterState extends State<GoogleMapScreen> {
+  final LatLng odishaCenter = const LatLng(20.9517, 85.0985);
+  late GoogleMapController _controller;
+  LatLng? _currentLocation;
+  List<Map<String, dynamic>> _businessResults = [];
+  Set<Marker> _businessMarkers = {}; // ✅ Store business markers
+
+  final String apiKey = "YOUR_GOOGLE_MAPS_API_KEY"; // Replace with your API Key
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    _askLocationPreference();
+  }
+
+  /// ✅ Ask user for location accuracy preference
+  Future<void> _askLocationPreference() async {
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      bool isPrecise = await _showLocationDialog();
+      setState(() {});
+      _getUserLocation(isPrecise);
+    });
+  }
+
+  /// ✅ Show accuracy preference dialog
+  Future<bool> _showLocationDialog() async {
+    return await showDialog<bool>(
+          context: context,
+          builder: (BuildContext context) {
+            return AlertDialog(
+              title: const Text("Choose Location Accuracy"),
+              content: const Text(
+                  "Would you like to use precise or approximate location?"),
+              actions: [
+                TextButton(
+                    onPressed: () => Navigator.of(context).pop(false),
+                    child: const Text("Approximate")),
+                TextButton(
+                    onPressed: () => Navigator.of(context).pop(true),
+                    child: const Text("Precise")),
+              ],
+            );
+          },
+        ) ??
+        false;
+  }
+
+  /// ✅ Get user location
+  Future<void> _getUserLocation(bool isPrecise) async {
+    Location location = Location();
+    bool serviceEnabled = await location.serviceEnabled();
+    if (!serviceEnabled) {
+      serviceEnabled = await location.requestService();
+      if (!serviceEnabled) return;
+    }
+
+    PermissionStatus permission = await location.hasPermission();
+    if (permission == PermissionStatus.denied) {
+      permission = await location.requestPermission();
+      if (permission != PermissionStatus.granted) return;
+    }
+
+    LocationData locationData = await location.getLocation();
+    LatLng userLatLng = LatLng(locationData.latitude!, locationData.longitude!);
+
+    if (!isPrecise) {
+      // If user chooses Approximate, round the coordinates
+      userLatLng = LatLng(
+        double.parse(userLatLng.latitude.toStringAsFixed(1)),
+        double.parse(userLatLng.longitude.toStringAsFixed(1)),
+      );
+    }
+
+    setState(() {
+      _currentLocation = userLatLng;
+    });
+
+    _controller.animateCamera(CameraUpdate.newLatLngZoom(userLatLng, 12));
+  }
+
+  /// ✅ Search for businesses and add markers
+  Future<void> searchNearbyBusiness(String businessType) async {
+    if (_currentLocation == null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text("Location not available, try again.")),
+      );
+      return;
+    }
+
+    final url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
+        "?location=${_currentLocation!.latitude},${_currentLocation!.longitude}"
+        "&radius=5000"
+        "&type=$businessType"
+        "&key=$apiKey";
+
+    final response = await http.get(Uri.parse(url));
+
+    if (response.statusCode == 200) {
+      final data = json.decode(response.body);
+      List<Map<String, dynamic>> results = [];
+      Set<Marker> newMarkers = {};
+
+      for (var place in data['results']) {
+        LatLng placeLatLng = LatLng(
+          place['geometry']['location']['lat'],
+          place['geometry']['location']['lng'],
+        );
+
+        results.add({
+          "name": place['name'],
+          "address": place['vicinity'],
+          "rating": place['rating'] ?? "N/A",
+          "location": placeLatLng,
+        });
+
+        // ✅ Add a marker for each business
+        newMarkers.add(
+          Marker(
+            markerId: MarkerId(place['name']),
+            position: placeLatLng,
+            infoWindow: InfoWindow(
+              title: place['name'],
+              snippet: "⭐ ${place['rating']} | 📍 ${place['vicinity']}",
+            ),
+          ),
+        );
+      }
+
+      setState(() {
+        _businessResults = results;
+        _businessMarkers = newMarkers;
+      });
+
+      _showResultsSheet();
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text("Failed to fetch places.")),
+      );
+    }
+  }
+
+  /// ✅ Show Bottom Sheet with search results
+  void _showResultsSheet() {
+    showModalBottomSheet(
+      context: context,
+      builder: (context) {
+        return Container(
+          padding: const EdgeInsets.all(16),
+          child: _businessResults.isEmpty
+              ? const Center(child: Text("No results found"))
+              : ListView.builder(
+                  itemCount: _businessResults.length,
+                  itemBuilder: (context, index) {
+                    var place = _businessResults[index];
+                    return ListTile(
+                      title: Text(place['name']),
+                      subtitle: Text("📍 ${place['address']}"),
+                      trailing: Text("⭐ ${place['rating']}"),
+                      onTap: () {
+                        // Move camera to selected place
+                        _controller.animateCamera(CameraUpdate.newLatLngZoom(
+                          place['location'],
+                          14,
+                        ));
+                      },
+                    );
+                  },
+                ),
+        );
+      },
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text("Nearby Search")),
+      body: Stack(
+        children: [
+          /// ✅ Google Map with business markers
+          GoogleMap(
+            initialCameraPosition: CameraPosition(
+              target: _currentLocation ?? odishaCenter,
+              zoom: 7.0,
+            ),
+            onMapCreated: (controller) {
+              _controller = controller;
+            },
+            markers: {
+              if (_currentLocation != null)
+                Marker(
+                  markerId: const MarkerId("current_location"),
+                  position: _currentLocation!,
+                  infoWindow: const InfoWindow(title: "Your Location"),
+                ),
+              ..._businessMarkers, // ✅ Display business markers
+            },
+          ),
+
+          /// ✅ Draggable Bottom Sheet for search options
+          DraggableScrollableSheet(
+            initialChildSize: 0.25,
+            minChildSize: 0.25,
+            maxChildSize: 0.6,
+            builder: (context, scrollController) {
+              return Container(
+                decoration: const BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(20),
+                    topRight: Radius.circular(20),
+                  ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black26,
+                      blurRadius: 10,
+                      spreadRadius: 2,
+                    ),
+                  ],
+                ),
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  children: [
+                    const Text("Search Nearby Places",
+                        style: TextStyle(
+                            fontSize: 18, fontWeight: FontWeight.bold)),
+                    const SizedBox(height: 10),
+                    ElevatedButton(
+                      onPressed: () => searchNearbyBusiness("restaurant"),
+                      child: const Text("Places To Open your business"),
+                    ),
+                    ElevatedButton(
+                      onPressed: () => searchNearbyBusiness("hospital"),
+                      child: const Text("Nearby Distribution"),
+                    ),
+                  ],
+                ),
+              );
+            },
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+void fetchBusinessLocations() async {
+  double latitude = 28.6139; // Example: New Delhi Latitude
+  double longitude = 77.2090; // Example: New Delhi Longitude
+
+  List<Map<String, dynamic>> places =
+      await searchBusinessLocations(latitude, longitude);
+
+  for (var place in places) {
+    print("Place: ${place['name']}, Address: ${place['address']}");
+  }
+}
+
+// Function to get nearby locations based on selected business
+Future<List<Map<String, dynamic>>> searchBusinessLocations(
+    double latitude, double longitude) async {
+  final SharedPreferences prefs = await SharedPreferences.getInstance();
+  String? selectedBusiness = prefs.getString('selected_business');
+
+  if (selectedBusiness == null) {
+    return [];
+  }
+
+  // Map business type to Google Places API search terms
+  Map<String, String> businessTypeMap = {
+    'Product Inventory': 'warehouse',
+    'Retail Business': 'shopping_mall',
+    'Manufacturing': 'factory',
+    'Service Industry': 'business_office'
+  };
+
+  String? placeType = businessTypeMap[selectedBusiness];
+  if (placeType == null) {
+    return [];
+  }
+
+  String apiUrl =
+      "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=$latitude,$longitude&radius=5000&type=$placeType&key=AIzaSyAGPhUQZJ6DQgx3dAHsvH-f5Qw9dd6VW98";
+
+  final response = await http.get(Uri.parse(apiUrl));
+
+  if (response.statusCode == 200) {
+    final data = json.decode(response.body);
+    List<Map<String, dynamic>> places = (data['results'] as List)
+        .map((place) => {
+              'name': place['name'],
+              'address': place['vicinity'],
+              'latitude': place['geometry']['location']['lat'],
+              'longitude': place['geometry']['location']['lng'],
+            })
+        .toList();
+    return places;
+  } else {
+    throw Exception("Failed to load places");
+  }
+}
