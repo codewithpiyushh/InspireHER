@@ -51,7 +51,76 @@ https://github.com/user-attachments/assets/d4fce425-3ee6-4276-8ec2-95c20721268a
 
 ## **File Structure**  
 
+```
+C:.
+├── .flutter-plugins  
+├── .flutter-plugins-dependencies 
+├── .gitattributes 
+├── .gitignore 
+├── .metadata 
+├── analysis_options.yaml 
+├── flutter_application_1.iml 
+├── pubspec.lock 
+├── pubspec.yaml // Project dependencies and configurations
+├── README.md 
+├── structure.txt 
+├── .dart_tool 
+├── .idea 
+├── android 
+├── assets // Static assets like images and fonts
+├── build // Build output directory
+├── ios 
+├── lib // Dart main folder where all the files are stored
+│   ├── firstpage.dart // First page of frontend 
+│   ├── main.dart // Entry point of the Flutter application
+│   ├── navigation_menu.dart // Navigation_menu used to navigate throught the application
+│   ├── conn 
+│   │   ├── connect.dart // Feature of the application that connect mentors to user
+│   │   └── mentorfile.dart // Mentor Profile page
+│   ├── finance // Finance-related code
+│   │   └── invest.dart // Feature of Application that give financial and investment options
+│   ├── home // Home screen code
+│   │   └── home_page.dart // Home page 
+│   ├── l10n // Localization files
+│   │   ├── app_en.arb // English localization resources
+│   │   ├── app_hi.arb // Hindi localization resources
+│   │   ├── app_localizations.dart // Localization support class
+│   │   ├── app_localizations_en.dart // English localization delegate
+│   │   └── app_localizations_hi.dart // Hindi localization delegate
+│   ├── lear // 
+│   │   └── try.dart // learn page 
+│   ├── scripts // Python scripts and data
+│   │   ├── application.py // Main application script
+│   │   ├── chroma.sqlite3 // Chroma database file
+│   │   ├── scheme.pdf // Scheme document (PDF)
+│   │   └── setuppython.py // Python setup script
+│   │   └── langchainchatbot // Langchain chatbot related files
+│   │       ├── BRAG.py // BRAG chatbot script
+│   │       ├── dairybusiness.txt // Data for dairy business
+│   │       ├── governmentschemes.json // Government schemes data (JSON)
+│   │       ├── scheme.pdf // Scheme document (PDF)
+│   │       ├── SchemesRAG.py // Schemes RAG script
+│   │       ├── tailoringbusiness.txt // Data for tailoring business
+│   │       └── tutoringbusiness.txt // Data for tutoring business
+│   └── set // Setup related code
+│       └── setup.dart // Setup configuration
+├── linux // Linux platform-specific code
+├── macos // macOS platform-specific code
+├── test // Widget tests
+│   └── widget_test.dart // Example widget test
+└── web // Web platform-specific code
+```
+
+
+
+
+
+
 ## **Getting Started**  
+
+
+
+
 
 ## **Architecture**
 ![Copy of EY-Detailed Presentation](https://github.com/user-attachments/assets/5643232d-48fd-45d6-9de9-deb37743a6a5)
