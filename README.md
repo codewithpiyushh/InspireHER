@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/52f7ae17-b4fc-4a59-9e70-b23e8a24f22e" alt="InspireHer Logo" width="80"/>
+</p>
+
 # InspireHer: AI-Powered Financial Advisor for Rural Women
 
 ## 📌 Overview
@@ -36,39 +40,9 @@ Click the link above to watch the InspireHer demo!
 ## 🛠️ Tech Stack
 - **Backend**: Flask (Python)
 - **Frontend**: Flutter (Dart)
-- **AI Model**: Fine-Tuned LLM (Meta Llama 2) using LangChain & Hugging Face
-- **Database**: Firebase / PostgreSQL
+- **AI Model**: LLM (Meta Llama 3) using LangChain & Hugging Face
 - **Cloud Services**: AWS / Google Cloud
 - **APIs**:
   - **GPS-API** for location-based business recommendations
-  - **Twilio API** for WhatsApp chatbot integration
   - **Hugging Face API** for AI model deployment
 
-## 💰 Revenue Model
-1. **Commission from Verified Resource Suppliers**: InspireHer earns a commission on successful sales through supplier partnerships.
-2. **Sponsored Financial Courses**: Generates revenue from advertisements and course partnerships.
-3. **Bank Partnerships**: Charges financial institutions for prioritizing their loan schemes.
-4. **Marketplace Sales (Future)**: Users will be able to buy resources directly from InspireHer.
-
-## 📈 Scalability & Feasibility
-- **Cloud-Based & Offline-Ready**: Ensures accessibility even in low-bandwidth areas
-- **Scalable AI Models**: Supports increasing user base with optimized AI inference
-- **Multilingual & Voice Support**: Expands reach to non-literate users across diverse regions
-- **Low-Cost Implementation**: Uses cloud-based solutions to minimize infrastructure costs
-
-## 🔮 Future Work & Innovations
-- **WhatsApp Integration** for seamless chatbot access
-- **Expansion to More Regional Languages** for better accessibility
-- **AI-Driven Personalized Business Insights** to enhance decision-making
-- **Voice-Based Navigation** for users with limited literacy
-- **Exclusive InspireHer Marketplace** where users can purchase business resources directly
-
-## 🏆 Impact & Key Takeaways
-- **Empowers Rural Women**: Provides financial independence and business opportunities
-- **Bridges the Financial Literacy Gap**: Makes complex financial concepts accessible
-- **Supports Economic Growth**: Encourages entrepreneurship in underserved communities
-- **Builds a Collaborative Ecosystem**: Connects users with mentors, resources, and funding opportunities
-
----
-### 🌟 Get Involved
-🚀 Join us in empowering women entrepreneurs! For collaborations, contributions, or inquiries, reach out via **[Your Contact Info]** or visit **[Your Website]**.
