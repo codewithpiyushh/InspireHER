@@ -6,13 +6,13 @@ InspireHer is a transformative AI-powered platform designed to bridge the financ
 ## **Index**
 
 1. [Key Features](#key-features)
-2. [File Structure](#file-structure)  
-3. [Getting Started](#getting-started)  
+2. [Demo Video](#demo-video)
+3. [File Strcuture](#file-structure)
+4. [Getting Started](#getting-started)  
    - [Prerequisites](#prerequisites)  
-   - [Installation](#installation)  
-4. [Architecture](#architecture)
-5. [User Interaction](#user-interaction)
----
+   - [Installation](#installation) 
+5. [Architecture](#architecture)
+6. [Tech Stack](#tech-stack)
 
 
 ## **Key Features**
@@ -37,19 +37,32 @@ InspireHer is a transformative AI-powered platform designed to bridge the financ
 - **Document Checklist**: Step-by-step guidance on required documents for seamless loan applications.  
 - **Budgeting & Analytics Tools**: Helps users track expenses, plan finances, and ensure business sustainability.  
 
-## 🎥 Demo Video  
+## **Demo Video**  
 
 [Watch the Demo](https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/assets/demo.mp4)  
 
-Click the link above to watch the InspireHer demo!
+## **File Structure**  
 
+## **Getting Started**  
 
-## 🛠️ Tech Stack
+## **Architecture**
+![Copy of EY-Detailed Presentation](https://github.com/user-attachments/assets/5643232d-48fd-45d6-9de9-deb37743a6a5)
+
+## **Tech stack**
 - **Backend**: Flask (Python)
 - **Frontend**: Flutter (Dart)
 - **AI Model**: LLM (Meta Llama 3) using LangChain & Hugging Face
-- **Cloud Services**: AWS / Google Cloud
 - **APIs**:
   - **GPS-API** for location-based business recommendations
   - **Hugging Face API** for AI model deployment
+  
+## **User Interaction**
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/e79edf4b-8a16-406d-940e-93f8e6550eb3" width="30%" />
+    <img src="https://github.com/user-attachments/assets/dd963a13-ffdd-4a7f-99b6-23730567dba7" width="30%" />
+    <img src="https://github.com/user-attachments/assets/e0693b0b-ca30-4553-93cc-1dd58d303606" width="30%" />
+</div>
+
+
 
