@@ -39,7 +39,15 @@ InspireHer is a transformative AI-powered platform designed to bridge the financ
 
 ## **Demo Video**  
 
-[Watch the Demo](https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/assets/demo.mp4)  
+
+
+
+https://github.com/user-attachments/assets/d4fce425-3ee6-4276-8ec2-95c20721268a
+
+
+
+
+
 
 ## **File Structure**  
 
