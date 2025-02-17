@@ -1,30 +1,37 @@
 # InspireHer: AI-Powered Financial Advisor for Rural Women
 
 ## 📌 Overview
-InspireHer is an AI-powered financial advisor designed to empower rural women by providing personalized business and financial education. The platform offers tailored financial insights, loan comparisons, budgeting tools, mentorship, and a resource marketplace to help women launch and sustain their businesses.
+InspireHer is a transformative AI-powered platform designed to bridge the financial literacy gap for rural women. It offers personalized financial education, mentorship, and essential business tools, empowering women to start and grow their businesses with confidence. By fostering entrepreneurship and creating an inclusive ecosystem, InspireHer enables women like Lakshmi to achieve financial independence and turn their aspirations into reality.
 
-## 🚀 Features
-### **AI-Powered Chatbot**
-- RAG-based LLM chatbot developed with **LangChain**
-- Provides step-by-step guidance on business setup and financial literacy
-- Supports multiple **regional languages** for accessibility
-- Integrated with **WhatsApp** for easy access via a voice-based chatbot
 
-### **Financial Services**
-- **Loan Scheme Comparison**: Helps users compare multiple loan options and eligibility criteria
-- **AI-Powered Legal & Government Insights**: Provides tailored advice on government schemes and funding opportunities
-- **Document Checklist**: Guides users through required documents for loan applications
+## 🚀 Features  
 
-### **Business Tools**
-- **Budgeting & Analytics Tools**: Assists users in managing expenses and tracking business growth
-- **Location-Based Business Insights**: Uses **GPS-API** to recommend the best business locations based on local demand and supply
-- **Resource Buying Recommendation**: Connects users with **verified suppliers** at reasonable prices
-- **Marketplace Integration**: Future goal to allow direct resource purchases within the InspireHer platform
+### 1. Learn 📚  
+- **AI-Powered Chatbot**: RAG-based LLM chatbot developed with **LangChain**, providing step-by-step business and financial guidance.  
+- **Expert Blogs**: Insights from industry leaders on financial literacy, business strategies, and market trends.  
+- **Mentorship Program**: Personalized guidance from successful female entrepreneurs and financial advisors.  
 
-### **Learning & Mentorship**
-- **Expert Blogs**: Insights on financial literacy, business strategies, and market trends
-- **Mentorship Program**: Connects users with successful female entrepreneurs and financial advisors
-- **Community Forum**: Enables users to share experiences, ask questions, and collaborate
+### 2. Setup 🚀  
+- **Location-Based Business Insights**: Uses **GPS-API** to recommend optimal business locations based on market demand and supplier proximity.  
+- **Resource Buying Recommendation**: Connects users with **verified suppliers** for cost-effective purchases.  
+- **Business Roadmaps**: AI-generated, step-by-step guides tailored to literacy levels and business types.  
+
+### 3. Connect 🤝  
+- **Female Entrepreneur Network**: Connects users with women in the same business sector to learn from their experiences.  
+- **Community Engagement**: Discussion forums and collaborative spaces to foster learning and business growth.  
+
+### 4. Finance 💰  
+- **Loan Scheme Comparison**: Helps users evaluate and apply for multiple loan options simultaneously.  
+- **AI-Powered Legal & Government Insights**: Provides tailored recommendations on government funding and financial aid.  
+- **Document Checklist**: Step-by-step guidance on required documents for seamless loan applications.  
+- **Budgeting & Analytics Tools**: Helps users track expenses, plan finances, and ensure business sustainability.  
+
+## 🎥 Demo Video  
+
+[Watch the Demo](https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/assets/demo.mp4)  
+
+Click the link above to watch the InspireHer demo!
+
 
 ## 🛠️ Tech Stack
 - **Backend**: Flask (Python)
