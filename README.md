@@ -77,9 +77,9 @@ C:.
 ## **User Interaction**
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/e79edf4b-8a16-406d-940e-93f8e6550eb3" width="20%" />
-    <img src="https://github.com/user-attachments/assets/dd963a13-ffdd-4a7f-99b6-23730567dba7" width="20%" />
-    <img src="https://github.com/user-attachments/assets/e0693b0b-ca30-4553-93cc-1dd58d303606" width="20%" />
+    <img src="https://github.com/user-attachments/assets/584a96c7-1566-47c1-948e-ee19476381dd" width="20%" />
+    <img src="https://github.com/user-attachments/assets/3dfccfea-1f96-4568-b82e-8ecce168efe6" width="20%" />
+    <img src="https://github.com/user-attachments/assets/458598ca-82c3-43f9-864b-ffc6a4d96b61" width="20%" />
 </div>
 
 ## **Conclusion**
