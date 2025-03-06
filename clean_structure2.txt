@@ -1,0 +1,2386 @@
+Folder PATH listing
+Volume serial number is 5845-4DFF
+C:.
++---.dart_tool
+|   +---dartpad
+|   +---extension_discovery
+|   \---flutter_build
+|       \---2354e8dfe4390e2ec13b89b72c1ea21d
++---.idea
+|   +---libraries
+|   \---runConfigurations
++---android
+|   +---.gradle
+|   |   +---8.3
+|   |   |   +---checksums
+|   |   |   +---dependencies-accessors
+|   |   |   +---executionHistory
+|   |   |   +---fileChanges
+|   |   |   +---fileHashes
+|   |   |   \---vcsMetadata
+|   |   +---buildOutputCleanup
+|   |   +---kotlin
+|   |   |   +---errors
+|   |   |   \---sessions
+|   |   \---vcs-1
+|   +---app
+|   |   +---.cxx
+|   |   |   \---Debug
+|   |   |       \---d4g3h251
+|   |   |           +---arm64-v8a
+|   |   |           |   +---.cmake
+|   |   |           |   |   \---api
+|   |   |           |   |       \---v1
+|   |   |           |   |           +---query
+|   |   |           |   |           |   \---client-agp
+|   |   |           |   |           \---reply
+|   |   |           |   \---CMakeFiles
+|   |   |           |       +---3.22.1-g37088a8-dirty
+|   |   |           |       |   +---CompilerIdC
+|   |   |           |       |   |   \---tmp
+|   |   |           |       |   \---CompilerIdCXX
+|   |   |           |       |       \---tmp
+|   |   |           |       \---CMakeTmp
+|   |   |           +---armeabi-v7a
+|   |   |           |   +---.cmake
+|   |   |           |   |   \---api
+|   |   |           |   |       \---v1
+|   |   |           |   |           +---query
+|   |   |           |   |           |   \---client-agp
+|   |   |           |   |           \---reply
+|   |   |           |   \---CMakeFiles
+|   |   |           |       +---3.22.1-g37088a8-dirty
+|   |   |           |       |   +---CompilerIdC
+|   |   |           |       |   |   \---tmp
+|   |   |           |       |   \---CompilerIdCXX
+|   |   |           |       |       \---tmp
+|   |   |           |       \---CMakeTmp
+|   |   |           +---x86
+|   |   |           |   +---.cmake
+|   |   |           |   |   \---api
+|   |   |           |   |       \---v1
+|   |   |           |   |           +---query
+|   |   |           |   |           |   \---client-agp
+|   |   |           |   |           \---reply
+|   |   |           |   \---CMakeFiles
+|   |   |           |       +---3.22.1-g37088a8-dirty
+|   |   |           |       |   +---CompilerIdC
+|   |   |           |       |   |   \---tmp
+|   |   |           |       |   \---CompilerIdCXX
+|   |   |           |       |       \---tmp
+|   |   |           |       \---CMakeTmp
+|   |   |           \---x86_64
+|   |   |               +---.cmake
+|   |   |               |   \---api
+|   |   |               |       \---v1
+|   |   |               |           +---query
+|   |   |               |           |   \---client-agp
+|   |   |               |           \---reply
+|   |   |               \---CMakeFiles
+|   |   |                   +---3.22.1-g37088a8-dirty
+|   |   |                   |   +---CompilerIdC
+|   |   |                   |   |   \---tmp
+|   |   |                   |   \---CompilerIdCXX
+|   |   |                   |       \---tmp
+|   |   |                   \---CMakeTmp
+|   |   \---src
+|   |       +---debug
+|   |       +---main
+|   |       |   +---java
+|   |       |   |   \---io
+|   |       |   |       \---flutter
+|   |       |   |           \---plugins
+|   |       |   +---kotlin
+|   |       |   |   \---com
+|   |       |   |       \---example
+|   |       |   |           \---flutter_application_1
+|   |       |   \---res
+|   |       |       +---drawable
+|   |       |       +---drawable-v21
+|   |       |       +---mipmap-hdpi
+|   |       |       +---mipmap-mdpi
+|   |       |       +---mipmap-xhdpi
+|   |       |       +---mipmap-xxhdpi
+|   |       |       +---mipmap-xxxhdpi
+|   |       |       +---values
+|   |       |       \---values-night
+|   |       \---profile
+|   \---gradle
+|       \---wrapper
++---assets
+|   \---video
++---build
+|   +---2ebc20c2b41ee7a5ad26c926d44dbef6
+|   +---ab899fb9dfc8d2e2fd3373cd782e28e0
+|   +---app
+|   |   +---generated
+|   |   |   +---ap_generated_sources
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   \---res
+|   |   |       +---pngs
+|   |   |       |   \---debug
+|   |   |       \---resValues
+|   |   |           \---debug
+|   |   +---intermediates
+|   |   |   +---aar_metadata_check
+|   |   |   |   \---debug
+|   |   |   +---annotation_processor_list
+|   |   |   |   \---debug
+|   |   |   +---apk_ide_redirect_file
+|   |   |   |   \---debug
+|   |   |   +---app_metadata
+|   |   |   |   \---debug
+|   |   |   +---assets
+|   |   |   |   \---debug
+|   |   |   |       \---flutter_assets
+|   |   |   |           +---assets
+|   |   |   |           |   \---video
+|   |   |   |           +---fonts
+|   |   |   |           +---lib
+|   |   |   |           |   \---l10n
+|   |   |   |           +---packages
+|   |   |   |           |   +---cupertino_icons
+|   |   |   |           |   |   \---assets
+|   |   |   |           |   +---flutter_inappwebview
+|   |   |   |           |   |   \---assets
+|   |   |   |           |   |       \---t_rex_runner
+|   |   |   |           |   +---flutter_inappwebview_web
+|   |   |   |           |   |   \---assets
+|   |   |   |           |   |       \---web
+|   |   |   |           |   +---iconsax
+|   |   |   |           |   |   \---lib
+|   |   |   |           |   |       \---assets
+|   |   |   |           |   |           \---fonts
+|   |   |   |           |   +---wakelock_plus
+|   |   |   |           |   |   \---assets
+|   |   |   |           |   \---youtube_player_flutter
+|   |   |   |           |       \---assets
+|   |   |   |           \---shaders
+|   |   |   +---compatible_screen_manifest
+|   |   |   |   \---debug
+|   |   |   +---compile_and_runtime_not_namespaced_r_class_jar
+|   |   |   |   \---debug
+|   |   |   +---compressed_assets
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   |           \---assets
+|   |   |   |               \---flutter_assets
+|   |   |   |                   +---assets
+|   |   |   |                   |   \---video
+|   |   |   |                   +---fonts
+|   |   |   |                   +---lib
+|   |   |   |                   |   \---l10n
+|   |   |   |                   +---packages
+|   |   |   |                   |   +---cupertino_icons
+|   |   |   |                   |   |   \---assets
+|   |   |   |                   |   +---flutter_inappwebview
+|   |   |   |                   |   |   \---assets
+|   |   |   |                   |   |       \---t_rex_runner
+|   |   |   |                   |   +---flutter_inappwebview_web
+|   |   |   |                   |   |   \---assets
+|   |   |   |                   |   |       \---web
+|   |   |   |                   |   +---iconsax
+|   |   |   |                   |   |   \---lib
+|   |   |   |                   |   |       \---assets
+|   |   |   |                   |   |           \---fonts
+|   |   |   |                   |   +---wakelock_plus
+|   |   |   |                   |   |   \---assets
+|   |   |   |                   |   \---youtube_player_flutter
+|   |   |   |                   |       \---assets
+|   |   |   |                   \---shaders
+|   |   |   +---cxx
+|   |   |   |   \---Debug
+|   |   |   |       \---d4g3h251
+|   |   |   |           +---logs
+|   |   |   |           |   +---arm64-v8a
+|   |   |   |           |   +---armeabi-v7a
+|   |   |   |           |   +---x86
+|   |   |   |           |   \---x86_64
+|   |   |   |           \---obj
+|   |   |   |               +---arm64-v8a
+|   |   |   |               +---armeabi-v7a
+|   |   |   |               +---x86
+|   |   |   |               \---x86_64
+|   |   |   +---data_binding_layout_info_type_merge
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---data_binding_layout_info_type_package
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---desugar_graph
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   |           +---currentProject
+|   |   |   |           |   +---dirs_bucket_0
+|   |   |   |           |   +---dirs_bucket_1
+|   |   |   |           |   +---dirs_bucket_2
+|   |   |   |           |   +---dirs_bucket_3
+|   |   |   |           |   +---dirs_bucket_4
+|   |   |   |           |   +---dirs_bucket_5
+|   |   |   |           |   +---dirs_bucket_6
+|   |   |   |           |   +---dirs_bucket_7
+|   |   |   |           |   +---jar_c3b60f28c0d928b43219bbf293d1379b84115dc6123355c94f8beadd65569b9b_bucket_0
+|   |   |   |           |   +---jar_c3b60f28c0d928b43219bbf293d1379b84115dc6123355c94f8beadd65569b9b_bucket_1
+|   |   |   |           |   +---jar_c3b60f28c0d928b43219bbf293d1379b84115dc6123355c94f8beadd65569b9b_bucket_2
+|   |   |   |           |   +---jar_c3b60f28c0d928b43219bbf293d1379b84115dc6123355c94f8beadd65569b9b_bucket_3
+|   |   |   |           |   +---jar_c3b60f28c0d928b43219bbf293d1379b84115dc6123355c94f8beadd65569b9b_bucket_4
+|   |   |   |           |   +---jar_c3b60f28c0d928b43219bbf293d1379b84115dc6123355c94f8beadd65569b9b_bucket_5
+|   |   |   |           |   +---jar_c3b60f28c0d928b43219bbf293d1379b84115dc6123355c94f8beadd65569b9b_bucket_6
+|   |   |   |           |   \---jar_c3b60f28c0d928b43219bbf293d1379b84115dc6123355c94f8beadd65569b9b_bucket_7
+|   |   |   |           +---externalLibs
+|   |   |   |           +---mixedScopes
+|   |   |   |           \---otherProjects
+|   |   |   |               +---jar_0a9055bf56821131be970ced97c33d0af9e9203f9a0116bfbba4ae30b5c329d1_bucket_0
+|   |   |   |               +---jar_0a9055bf56821131be970ced97c33d0af9e9203f9a0116bfbba4ae30b5c329d1_bucket_1
+|   |   |   |               +---jar_0a9055bf56821131be970ced97c33d0af9e9203f9a0116bfbba4ae30b5c329d1_bucket_2
+|   |   |   |               +---jar_0a9055bf56821131be970ced97c33d0af9e9203f9a0116bfbba4ae30b5c329d1_bucket_3
+|   |   |   |               +---jar_0a9055bf56821131be970ced97c33d0af9e9203f9a0116bfbba4ae30b5c329d1_bucket_4
+|   |   |   |               +---jar_0a9055bf56821131be970ced97c33d0af9e9203f9a0116bfbba4ae30b5c329d1_bucket_5
+|   |   |   |               +---jar_0a9055bf56821131be970ced97c33d0af9e9203f9a0116bfbba4ae30b5c329d1_bucket_6
+|   |   |   |               +---jar_0a9055bf56821131be970ced97c33d0af9e9203f9a0116bfbba4ae30b5c329d1_bucket_7
+|   |   |   |               +---jar_171c93416a26158c96d7b7d41df48d6be13b505c6778dabc7b2ad30942687463_bucket_0
+|   |   |   |               +---jar_171c93416a26158c96d7b7d41df48d6be13b505c6778dabc7b2ad30942687463_bucket_1
+|   |   |   |               +---jar_171c93416a26158c96d7b7d41df48d6be13b505c6778dabc7b2ad30942687463_bucket_2
+|   |   |   |               +---jar_171c93416a26158c96d7b7d41df48d6be13b505c6778dabc7b2ad30942687463_bucket_3
+|   |   |   |               +---jar_171c93416a26158c96d7b7d41df48d6be13b505c6778dabc7b2ad30942687463_bucket_4
+|   |   |   |               +---jar_171c93416a26158c96d7b7d41df48d6be13b505c6778dabc7b2ad30942687463_bucket_5
+|   |   |   |               +---jar_171c93416a26158c96d7b7d41df48d6be13b505c6778dabc7b2ad30942687463_bucket_6
+|   |   |   |               +---jar_171c93416a26158c96d7b7d41df48d6be13b505c6778dabc7b2ad30942687463_bucket_7
+|   |   |   |               +---jar_341cd455d0dc90868b231475204c9cbfa9ca1c0e9fb41471d58cfbb8b09433a2_bucket_0
+|   |   |   |               +---jar_341cd455d0dc90868b231475204c9cbfa9ca1c0e9fb41471d58cfbb8b09433a2_bucket_1
+|   |   |   |               +---jar_341cd455d0dc90868b231475204c9cbfa9ca1c0e9fb41471d58cfbb8b09433a2_bucket_2
+|   |   |   |               +---jar_341cd455d0dc90868b231475204c9cbfa9ca1c0e9fb41471d58cfbb8b09433a2_bucket_3
+|   |   |   |               +---jar_341cd455d0dc90868b231475204c9cbfa9ca1c0e9fb41471d58cfbb8b09433a2_bucket_4
+|   |   |   |               +---jar_341cd455d0dc90868b231475204c9cbfa9ca1c0e9fb41471d58cfbb8b09433a2_bucket_5
+|   |   |   |               +---jar_341cd455d0dc90868b231475204c9cbfa9ca1c0e9fb41471d58cfbb8b09433a2_bucket_6
+|   |   |   |               +---jar_341cd455d0dc90868b231475204c9cbfa9ca1c0e9fb41471d58cfbb8b09433a2_bucket_7
+|   |   |   |               +---jar_66efd035bf0ca9201368837667532528c91af8025c1d5d600892d0e0ddb3f499_bucket_0
+|   |   |   |               +---jar_66efd035bf0ca9201368837667532528c91af8025c1d5d600892d0e0ddb3f499_bucket_1
+|   |   |   |               +---jar_66efd035bf0ca9201368837667532528c91af8025c1d5d600892d0e0ddb3f499_bucket_2
+|   |   |   |               +---jar_66efd035bf0ca9201368837667532528c91af8025c1d5d600892d0e0ddb3f499_bucket_3
+|   |   |   |               +---jar_66efd035bf0ca9201368837667532528c91af8025c1d5d600892d0e0ddb3f499_bucket_4
+|   |   |   |               +---jar_66efd035bf0ca9201368837667532528c91af8025c1d5d600892d0e0ddb3f499_bucket_5
+|   |   |   |               +---jar_66efd035bf0ca9201368837667532528c91af8025c1d5d600892d0e0ddb3f499_bucket_6
+|   |   |   |               +---jar_66efd035bf0ca9201368837667532528c91af8025c1d5d600892d0e0ddb3f499_bucket_7
+|   |   |   |               +---jar_70251a3dba40dcada011f8d016f2131013f94a4fe11dc9023779068e22663e6a_bucket_0
+|   |   |   |               +---jar_70251a3dba40dcada011f8d016f2131013f94a4fe11dc9023779068e22663e6a_bucket_1
+|   |   |   |               +---jar_70251a3dba40dcada011f8d016f2131013f94a4fe11dc9023779068e22663e6a_bucket_2
+|   |   |   |               +---jar_70251a3dba40dcada011f8d016f2131013f94a4fe11dc9023779068e22663e6a_bucket_3
+|   |   |   |               +---jar_70251a3dba40dcada011f8d016f2131013f94a4fe11dc9023779068e22663e6a_bucket_4
+|   |   |   |               +---jar_70251a3dba40dcada011f8d016f2131013f94a4fe11dc9023779068e22663e6a_bucket_5
+|   |   |   |               +---jar_70251a3dba40dcada011f8d016f2131013f94a4fe11dc9023779068e22663e6a_bucket_6
+|   |   |   |               +---jar_70251a3dba40dcada011f8d016f2131013f94a4fe11dc9023779068e22663e6a_bucket_7
+|   |   |   |               +---jar_85f019672055b6693eb6080ba76a4d81fcbf8b9aab1afaa5f57960cf5871d138_bucket_0
+|   |   |   |               +---jar_85f019672055b6693eb6080ba76a4d81fcbf8b9aab1afaa5f57960cf5871d138_bucket_1
+|   |   |   |               +---jar_85f019672055b6693eb6080ba76a4d81fcbf8b9aab1afaa5f57960cf5871d138_bucket_2
+|   |   |   |               +---jar_85f019672055b6693eb6080ba76a4d81fcbf8b9aab1afaa5f57960cf5871d138_bucket_3
+|   |   |   |               +---jar_85f019672055b6693eb6080ba76a4d81fcbf8b9aab1afaa5f57960cf5871d138_bucket_4
+|   |   |   |               +---jar_85f019672055b6693eb6080ba76a4d81fcbf8b9aab1afaa5f57960cf5871d138_bucket_5
+|   |   |   |               +---jar_85f019672055b6693eb6080ba76a4d81fcbf8b9aab1afaa5f57960cf5871d138_bucket_6
+|   |   |   |               +---jar_85f019672055b6693eb6080ba76a4d81fcbf8b9aab1afaa5f57960cf5871d138_bucket_7
+|   |   |   |               +---jar_9276e309f1168230128c3030dd73fad2fdb723a1202a6ccfcfa7a3603b1dab5f_bucket_0
+|   |   |   |               +---jar_9276e309f1168230128c3030dd73fad2fdb723a1202a6ccfcfa7a3603b1dab5f_bucket_1
+|   |   |   |               +---jar_9276e309f1168230128c3030dd73fad2fdb723a1202a6ccfcfa7a3603b1dab5f_bucket_2
+|   |   |   |               +---jar_9276e309f1168230128c3030dd73fad2fdb723a1202a6ccfcfa7a3603b1dab5f_bucket_3
+|   |   |   |               +---jar_9276e309f1168230128c3030dd73fad2fdb723a1202a6ccfcfa7a3603b1dab5f_bucket_4
+|   |   |   |               +---jar_9276e309f1168230128c3030dd73fad2fdb723a1202a6ccfcfa7a3603b1dab5f_bucket_5
+|   |   |   |               +---jar_9276e309f1168230128c3030dd73fad2fdb723a1202a6ccfcfa7a3603b1dab5f_bucket_6
+|   |   |   |               +---jar_9276e309f1168230128c3030dd73fad2fdb723a1202a6ccfcfa7a3603b1dab5f_bucket_7
+|   |   |   |               +---jar_9fcac9356a1d6aba876af6afff941b41234f8cd85162be96e0135d6e867d7533_bucket_0
+|   |   |   |               +---jar_9fcac9356a1d6aba876af6afff941b41234f8cd85162be96e0135d6e867d7533_bucket_1
+|   |   |   |               +---jar_9fcac9356a1d6aba876af6afff941b41234f8cd85162be96e0135d6e867d7533_bucket_2
+|   |   |   |               +---jar_9fcac9356a1d6aba876af6afff941b41234f8cd85162be96e0135d6e867d7533_bucket_3
+|   |   |   |               +---jar_9fcac9356a1d6aba876af6afff941b41234f8cd85162be96e0135d6e867d7533_bucket_4
+|   |   |   |               +---jar_9fcac9356a1d6aba876af6afff941b41234f8cd85162be96e0135d6e867d7533_bucket_5
+|   |   |   |               +---jar_9fcac9356a1d6aba876af6afff941b41234f8cd85162be96e0135d6e867d7533_bucket_6
+|   |   |   |               +---jar_9fcac9356a1d6aba876af6afff941b41234f8cd85162be96e0135d6e867d7533_bucket_7
+|   |   |   |               +---jar_b0d48d1e545fee3444c13e5c64899f633abbb69d4b162cdd6dbd4997d11ba6b1_bucket_0
+|   |   |   |               +---jar_b0d48d1e545fee3444c13e5c64899f633abbb69d4b162cdd6dbd4997d11ba6b1_bucket_1
+|   |   |   |               +---jar_b0d48d1e545fee3444c13e5c64899f633abbb69d4b162cdd6dbd4997d11ba6b1_bucket_2
+|   |   |   |               +---jar_b0d48d1e545fee3444c13e5c64899f633abbb69d4b162cdd6dbd4997d11ba6b1_bucket_3
+|   |   |   |               +---jar_b0d48d1e545fee3444c13e5c64899f633abbb69d4b162cdd6dbd4997d11ba6b1_bucket_4
+|   |   |   |               +---jar_b0d48d1e545fee3444c13e5c64899f633abbb69d4b162cdd6dbd4997d11ba6b1_bucket_5
+|   |   |   |               +---jar_b0d48d1e545fee3444c13e5c64899f633abbb69d4b162cdd6dbd4997d11ba6b1_bucket_6
+|   |   |   |               +---jar_b0d48d1e545fee3444c13e5c64899f633abbb69d4b162cdd6dbd4997d11ba6b1_bucket_7
+|   |   |   |               +---jar_c23d20dea8f52d4ce979105f3532564b69c78d5d5a1a9cdb57ae65fedbfc40d9_bucket_0
+|   |   |   |               +---jar_c23d20dea8f52d4ce979105f3532564b69c78d5d5a1a9cdb57ae65fedbfc40d9_bucket_1
+|   |   |   |               +---jar_c23d20dea8f52d4ce979105f3532564b69c78d5d5a1a9cdb57ae65fedbfc40d9_bucket_2
+|   |   |   |               +---jar_c23d20dea8f52d4ce979105f3532564b69c78d5d5a1a9cdb57ae65fedbfc40d9_bucket_3
+|   |   |   |               +---jar_c23d20dea8f52d4ce979105f3532564b69c78d5d5a1a9cdb57ae65fedbfc40d9_bucket_4
+|   |   |   |               +---jar_c23d20dea8f52d4ce979105f3532564b69c78d5d5a1a9cdb57ae65fedbfc40d9_bucket_5
+|   |   |   |               +---jar_c23d20dea8f52d4ce979105f3532564b69c78d5d5a1a9cdb57ae65fedbfc40d9_bucket_6
+|   |   |   |               +---jar_c23d20dea8f52d4ce979105f3532564b69c78d5d5a1a9cdb57ae65fedbfc40d9_bucket_7
+|   |   |   |               +---jar_d475480190da39bf93afe175344a9c6d11c58612a8080fc81c7140ff3447fe0a_bucket_0
+|   |   |   |               +---jar_d475480190da39bf93afe175344a9c6d11c58612a8080fc81c7140ff3447fe0a_bucket_1
+|   |   |   |               +---jar_d475480190da39bf93afe175344a9c6d11c58612a8080fc81c7140ff3447fe0a_bucket_2
+|   |   |   |               +---jar_d475480190da39bf93afe175344a9c6d11c58612a8080fc81c7140ff3447fe0a_bucket_3
+|   |   |   |               +---jar_d475480190da39bf93afe175344a9c6d11c58612a8080fc81c7140ff3447fe0a_bucket_4
+|   |   |   |               +---jar_d475480190da39bf93afe175344a9c6d11c58612a8080fc81c7140ff3447fe0a_bucket_5
+|   |   |   |               +---jar_d475480190da39bf93afe175344a9c6d11c58612a8080fc81c7140ff3447fe0a_bucket_6
+|   |   |   |               +---jar_d475480190da39bf93afe175344a9c6d11c58612a8080fc81c7140ff3447fe0a_bucket_7
+|   |   |   |               +---jar_e281e2012768c3636499a7b510445c9042f364555b63fbe574b6b59f2d0a7b22_bucket_0
+|   |   |   |               +---jar_e281e2012768c3636499a7b510445c9042f364555b63fbe574b6b59f2d0a7b22_bucket_1
+|   |   |   |               +---jar_e281e2012768c3636499a7b510445c9042f364555b63fbe574b6b59f2d0a7b22_bucket_2
+|   |   |   |               +---jar_e281e2012768c3636499a7b510445c9042f364555b63fbe574b6b59f2d0a7b22_bucket_3
+|   |   |   |               +---jar_e281e2012768c3636499a7b510445c9042f364555b63fbe574b6b59f2d0a7b22_bucket_4
+|   |   |   |               +---jar_e281e2012768c3636499a7b510445c9042f364555b63fbe574b6b59f2d0a7b22_bucket_5
+|   |   |   |               +---jar_e281e2012768c3636499a7b510445c9042f364555b63fbe574b6b59f2d0a7b22_bucket_6
+|   |   |   |               +---jar_e281e2012768c3636499a7b510445c9042f364555b63fbe574b6b59f2d0a7b22_bucket_7
+|   |   |   |               +---jar_e9b6ab15ab59e7a8275d3ee8060515594b3a8addaa18633379db78a470ed29db_bucket_0
+|   |   |   |               +---jar_e9b6ab15ab59e7a8275d3ee8060515594b3a8addaa18633379db78a470ed29db_bucket_1
+|   |   |   |               +---jar_e9b6ab15ab59e7a8275d3ee8060515594b3a8addaa18633379db78a470ed29db_bucket_2
+|   |   |   |               +---jar_e9b6ab15ab59e7a8275d3ee8060515594b3a8addaa18633379db78a470ed29db_bucket_3
+|   |   |   |               +---jar_e9b6ab15ab59e7a8275d3ee8060515594b3a8addaa18633379db78a470ed29db_bucket_4
+|   |   |   |               +---jar_e9b6ab15ab59e7a8275d3ee8060515594b3a8addaa18633379db78a470ed29db_bucket_5
+|   |   |   |               +---jar_e9b6ab15ab59e7a8275d3ee8060515594b3a8addaa18633379db78a470ed29db_bucket_6
+|   |   |   |               +---jar_e9b6ab15ab59e7a8275d3ee8060515594b3a8addaa18633379db78a470ed29db_bucket_7
+|   |   |   |               +---jar_f05e3c235e99647f8d49e153e178f7c700717c4ee076dc8f897fbd4ccfff5f26_bucket_0
+|   |   |   |               +---jar_f05e3c235e99647f8d49e153e178f7c700717c4ee076dc8f897fbd4ccfff5f26_bucket_1
+|   |   |   |               +---jar_f05e3c235e99647f8d49e153e178f7c700717c4ee076dc8f897fbd4ccfff5f26_bucket_2
+|   |   |   |               +---jar_f05e3c235e99647f8d49e153e178f7c700717c4ee076dc8f897fbd4ccfff5f26_bucket_3
+|   |   |   |               +---jar_f05e3c235e99647f8d49e153e178f7c700717c4ee076dc8f897fbd4ccfff5f26_bucket_4
+|   |   |   |               +---jar_f05e3c235e99647f8d49e153e178f7c700717c4ee076dc8f897fbd4ccfff5f26_bucket_5
+|   |   |   |               +---jar_f05e3c235e99647f8d49e153e178f7c700717c4ee076dc8f897fbd4ccfff5f26_bucket_6
+|   |   |   |               \---jar_f05e3c235e99647f8d49e153e178f7c700717c4ee076dc8f897fbd4ccfff5f26_bucket_7
+|   |   |   +---dex
+|   |   |   |   \---debug
+|   |   |   |       +---mergeExtDexDebug
+|   |   |   |       +---mergeLibDexDebug
+|   |   |   |       |   +---0
+|   |   |   |       |   +---1
+|   |   |   |       |   +---10
+|   |   |   |       |   +---11
+|   |   |   |       |   +---12
+|   |   |   |       |   +---13
+|   |   |   |       |   +---14
+|   |   |   |       |   +---15
+|   |   |   |       |   +---2
+|   |   |   |       |   +---3
+|   |   |   |       |   +---4
+|   |   |   |       |   +---5
+|   |   |   |       |   +---6
+|   |   |   |       |   +---7
+|   |   |   |       |   +---8
+|   |   |   |       |   \---9
+|   |   |   |       \---mergeProjectDexDebug
+|   |   |   |           +---0
+|   |   |   |           +---1
+|   |   |   |           +---10
+|   |   |   |           +---11
+|   |   |   |           +---12
+|   |   |   |           +---13
+|   |   |   |           +---14
+|   |   |   |           +---15
+|   |   |   |           +---2
+|   |   |   |           +---3
+|   |   |   |           +---4
+|   |   |   |           +---5
+|   |   |   |           +---6
+|   |   |   |           +---7
+|   |   |   |           +---8
+|   |   |   |           \---9
+|   |   |   +---dex_archive_input_jar_hashes
+|   |   |   |   \---debug
+|   |   |   +---dex_number_of_buckets_file
+|   |   |   |   \---debug
+|   |   |   +---duplicate_classes_check
+|   |   |   |   \---debug
+|   |   |   +---external_file_lib_dex_archives
+|   |   |   |   \---debug
+|   |   |   +---external_libs_dex_archive
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---external_libs_dex_archive_with_artifact_transforms
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---flutter
+|   |   |   |   \---debug
+|   |   |   |       \---flutter_assets
+|   |   |   |           +---assets
+|   |   |   |           |   \---video
+|   |   |   |           +---fonts
+|   |   |   |           +---lib
+|   |   |   |           |   \---l10n
+|   |   |   |           +---packages
+|   |   |   |           |   +---cupertino_icons
+|   |   |   |           |   |   \---assets
+|   |   |   |           |   +---flutter_inappwebview
+|   |   |   |           |   |   \---assets
+|   |   |   |           |   |       \---t_rex_runner
+|   |   |   |           |   +---flutter_inappwebview_web
+|   |   |   |           |   |   \---assets
+|   |   |   |           |   |       \---web
+|   |   |   |           |   +---iconsax
+|   |   |   |           |   |   \---lib
+|   |   |   |           |   |       \---assets
+|   |   |   |           |   |           \---fonts
+|   |   |   |           |   +---wakelock_plus
+|   |   |   |           |   |   \---assets
+|   |   |   |           |   \---youtube_player_flutter
+|   |   |   |           |       \---assets
+|   |   |   |           \---shaders
+|   |   |   +---incremental
+|   |   |   |   +---debug
+|   |   |   |   |   +---mergeDebugResources
+|   |   |   |   |   |   +---merged.dir
+|   |   |   |   |   |   |   +---values
+|   |   |   |   |   |   |   +---values-af
+|   |   |   |   |   |   |   +---values-am
+|   |   |   |   |   |   |   +---values-ar
+|   |   |   |   |   |   |   +---values-as
+|   |   |   |   |   |   |   +---values-az
+|   |   |   |   |   |   |   +---values-b+sr+Latn
+|   |   |   |   |   |   |   +---values-be
+|   |   |   |   |   |   |   +---values-bg
+|   |   |   |   |   |   |   +---values-bn
+|   |   |   |   |   |   |   +---values-bs
+|   |   |   |   |   |   |   +---values-ca
+|   |   |   |   |   |   |   +---values-cs
+|   |   |   |   |   |   |   +---values-da
+|   |   |   |   |   |   |   +---values-de
+|   |   |   |   |   |   |   +---values-el
+|   |   |   |   |   |   |   +---values-en-rAU
+|   |   |   |   |   |   |   +---values-en-rCA
+|   |   |   |   |   |   |   +---values-en-rGB
+|   |   |   |   |   |   |   +---values-en-rIN
+|   |   |   |   |   |   |   +---values-en-rXC
+|   |   |   |   |   |   |   +---values-es
+|   |   |   |   |   |   |   +---values-es-rUS
+|   |   |   |   |   |   |   +---values-et
+|   |   |   |   |   |   |   +---values-eu
+|   |   |   |   |   |   |   +---values-fa
+|   |   |   |   |   |   |   +---values-fi
+|   |   |   |   |   |   |   +---values-fr
+|   |   |   |   |   |   |   +---values-fr-rCA
+|   |   |   |   |   |   |   +---values-gl
+|   |   |   |   |   |   |   +---values-gu
+|   |   |   |   |   |   |   +---values-h720dp-v13
+|   |   |   |   |   |   |   +---values-hdpi-v4
+|   |   |   |   |   |   |   +---values-hi
+|   |   |   |   |   |   |   +---values-hr
+|   |   |   |   |   |   |   +---values-hu
+|   |   |   |   |   |   |   +---values-hy
+|   |   |   |   |   |   |   +---values-in
+|   |   |   |   |   |   |   +---values-is
+|   |   |   |   |   |   |   +---values-it
+|   |   |   |   |   |   |   +---values-iw
+|   |   |   |   |   |   |   +---values-ja
+|   |   |   |   |   |   |   +---values-ka
+|   |   |   |   |   |   |   +---values-kk
+|   |   |   |   |   |   |   +---values-km
+|   |   |   |   |   |   |   +---values-kn
+|   |   |   |   |   |   |   +---values-ko
+|   |   |   |   |   |   |   +---values-ky
+|   |   |   |   |   |   |   +---values-land
+|   |   |   |   |   |   |   +---values-large-v4
+|   |   |   |   |   |   |   +---values-ldltr-v21
+|   |   |   |   |   |   |   +---values-lo
+|   |   |   |   |   |   |   +---values-lt
+|   |   |   |   |   |   |   +---values-lv
+|   |   |   |   |   |   |   +---values-mk
+|   |   |   |   |   |   |   +---values-ml
+|   |   |   |   |   |   |   +---values-mn
+|   |   |   |   |   |   |   +---values-mr
+|   |   |   |   |   |   |   +---values-ms
+|   |   |   |   |   |   |   +---values-my
+|   |   |   |   |   |   |   +---values-nb
+|   |   |   |   |   |   |   +---values-ne
+|   |   |   |   |   |   |   +---values-night-v8
+|   |   |   |   |   |   |   +---values-nl
+|   |   |   |   |   |   |   +---values-or
+|   |   |   |   |   |   |   +---values-pa
+|   |   |   |   |   |   |   +---values-pl
+|   |   |   |   |   |   |   +---values-port
+|   |   |   |   |   |   |   +---values-pt
+|   |   |   |   |   |   |   +---values-pt-rBR
+|   |   |   |   |   |   |   +---values-pt-rPT
+|   |   |   |   |   |   |   +---values-ro
+|   |   |   |   |   |   |   +---values-ru
+|   |   |   |   |   |   |   +---values-si
+|   |   |   |   |   |   |   +---values-sk
+|   |   |   |   |   |   |   +---values-sl
+|   |   |   |   |   |   |   +---values-sq
+|   |   |   |   |   |   |   +---values-sr
+|   |   |   |   |   |   |   +---values-sv
+|   |   |   |   |   |   |   +---values-sw
+|   |   |   |   |   |   |   +---values-sw360dp-v13
+|   |   |   |   |   |   |   +---values-sw600dp-v13
+|   |   |   |   |   |   |   +---values-ta
+|   |   |   |   |   |   |   +---values-te
+|   |   |   |   |   |   |   +---values-th
+|   |   |   |   |   |   |   +---values-tl
+|   |   |   |   |   |   |   +---values-tr
+|   |   |   |   |   |   |   +---values-uk
+|   |   |   |   |   |   |   +---values-ur
+|   |   |   |   |   |   |   +---values-uz
+|   |   |   |   |   |   |   +---values-v16
+|   |   |   |   |   |   |   +---values-v17
+|   |   |   |   |   |   |   +---values-v18
+|   |   |   |   |   |   |   +---values-v21
+|   |   |   |   |   |   |   +---values-v22
+|   |   |   |   |   |   |   +---values-v23
+|   |   |   |   |   |   |   +---values-v24
+|   |   |   |   |   |   |   +---values-v25
+|   |   |   |   |   |   |   +---values-v26
+|   |   |   |   |   |   |   +---values-v28
+|   |   |   |   |   |   |   +---values-vi
+|   |   |   |   |   |   |   +---values-watch-v20
+|   |   |   |   |   |   |   +---values-watch-v21
+|   |   |   |   |   |   |   +---values-xlarge-v4
+|   |   |   |   |   |   |   +---values-zh-rCN
+|   |   |   |   |   |   |   +---values-zh-rHK
+|   |   |   |   |   |   |   +---values-zh-rTW
+|   |   |   |   |   |   |   \---values-zu
+|   |   |   |   |   |   \---stripped.dir
+|   |   |   |   |   \---packageDebugResources
+|   |   |   |   |       +---merged.dir
+|   |   |   |   |       |   +---values
+|   |   |   |   |       |   \---values-night-v8
+|   |   |   |   |       \---stripped.dir
+|   |   |   |   +---debug-mergeJavaRes
+|   |   |   |   |   \---zip-cache
+|   |   |   |   +---mergeDebugAssets
+|   |   |   |   +---mergeDebugJniLibFolders
+|   |   |   |   +---mergeDebugShaders
+|   |   |   |   \---packageDebug
+|   |   |   |       \---tmp
+|   |   |   |           \---debug
+|   |   |   |               \---zip-cache
+|   |   |   +---javac
+|   |   |   |   \---debug
+|   |   |   |       \---classes
+|   |   |   |           \---io
+|   |   |   |               \---flutter
+|   |   |   |                   \---plugins
+|   |   |   +---java_res
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   |           +---com
+|   |   |   |           |   \---example
+|   |   |   |           |       \---flutter_application_1
+|   |   |   |           \---META-INF
+|   |   |   +---local_only_symbol_list
+|   |   |   |   \---debug
+|   |   |   +---manifest_merge_blame_file
+|   |   |   |   \---debug
+|   |   |   +---merged_java_res
+|   |   |   |   \---debug
+|   |   |   +---merged_jni_libs
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---merged_manifest
+|   |   |   |   \---debug
+|   |   |   +---merged_manifests
+|   |   |   |   \---debug
+|   |   |   +---merged_native_libs
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   |           \---lib
+|   |   |   |               +---arm64-v8a
+|   |   |   |               +---armeabi-v7a
+|   |   |   |               +---x86
+|   |   |   |               \---x86_64
+|   |   |   +---merged_res
+|   |   |   |   \---debug
+|   |   |   +---merged_res_blame_folder
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   |           +---multi-v2
+|   |   |   |           \---single
+|   |   |   +---merged_shaders
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---mixed_scope_dex_archive
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---navigation_json
+|   |   |   |   \---debug
+|   |   |   +---packaged_manifests
+|   |   |   |   \---debug
+|   |   |   +---packaged_res
+|   |   |   |   \---debug
+|   |   |   |       +---drawable-v21
+|   |   |   |       +---mipmap-hdpi-v4
+|   |   |   |       +---mipmap-mdpi-v4
+|   |   |   |       +---mipmap-xhdpi-v4
+|   |   |   |       +---mipmap-xxhdpi-v4
+|   |   |   |       +---mipmap-xxxhdpi-v4
+|   |   |   |       +---values
+|   |   |   |       \---values-night-v8
+|   |   |   +---processed_res
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---project_dex_archive
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   |           +---com
+|   |   |   |           |   \---example
+|   |   |   |           |       \---flutter_application_1
+|   |   |   |           \---io
+|   |   |   |               \---flutter
+|   |   |   |                   \---plugins
+|   |   |   +---runtime_symbol_list
+|   |   |   |   \---debug
+|   |   |   +---signing_config_versions
+|   |   |   |   \---debug
+|   |   |   +---source_set_path_map
+|   |   |   |   \---debug
+|   |   |   +---stripped_native_libs
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   |           \---lib
+|   |   |   |               +---arm64-v8a
+|   |   |   |               +---armeabi-v7a
+|   |   |   |               +---x86
+|   |   |   |               \---x86_64
+|   |   |   +---sub_project_dex_archive
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---symbol_list_with_package_name
+|   |   |   |   \---debug
+|   |   |   \---validate_signing_config
+|   |   |       \---debug
+|   |   +---kotlin
+|   |   |   \---compileDebugKotlin
+|   |   |       +---cacheable
+|   |   |       |   \---caches-jvm
+|   |   |       |       +---inputs
+|   |   |       |       +---jvm
+|   |   |       |       |   \---kotlin
+|   |   |       |       \---lookups
+|   |   |       +---classpath-snapshot
+|   |   |       \---local-state
+|   |   +---outputs
+|   |   |   +---apk
+|   |   |   |   \---debug
+|   |   |   +---flutter-apk
+|   |   |   \---logs
+|   |   \---tmp
+|   |       +---compileDebugJavaWithJavac
+|   |       +---kotlin-classes
+|   |       |   \---debug
+|   |       |       +---com
+|   |       |       |   \---example
+|   |       |       |       \---flutter_application_1
+|   |       |       \---META-INF
+|   |       \---packJniLibsflutterBuildDebug
+|   +---flutter_inappwebview_android
+|   |   +---.transforms
+|   |   |   \---1200c8b4917bda6a449a9a7a1be1e6e0
+|   |   |       \---transformed
+|   |   |           \---classes
+|   |   +---generated
+|   |   |   +---ap_generated_sources
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   \---res
+|   |   |       +---pngs
+|   |   |       |   \---debug
+|   |   |       \---resValues
+|   |   |           \---debug
+|   |   +---intermediates
+|   |   |   +---aapt_friendly_merged_manifests
+|   |   |   |   \---debug
+|   |   |   |       \---aapt
+|   |   |   +---aar_libs_directory
+|   |   |   |   \---debug
+|   |   |   |       \---libs
+|   |   |   +---aar_main_jar
+|   |   |   |   \---debug
+|   |   |   +---aar_metadata
+|   |   |   |   \---debug
+|   |   |   +---annotations_typedef_file
+|   |   |   |   \---debug
+|   |   |   +---annotations_zip
+|   |   |   |   \---debug
+|   |   |   +---annotation_processor_list
+|   |   |   |   \---debug
+|   |   |   +---compiled_local_resources
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---compile_library_classes_jar
+|   |   |   |   \---debug
+|   |   |   +---compile_r_class_jar
+|   |   |   |   \---debug
+|   |   |   +---compile_symbol_list
+|   |   |   |   \---debug
+|   |   |   +---data_binding_layout_info_type_package
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---generated_proguard_file
+|   |   |   |   \---debug
+|   |   |   +---incremental
+|   |   |   |   +---debug
+|   |   |   |   |   \---packageDebugResources
+|   |   |   |   |       +---merged.dir
+|   |   |   |   |       |   \---values
+|   |   |   |   |       \---stripped.dir
+|   |   |   |   +---debug-mergeJavaRes
+|   |   |   |   |   \---zip-cache
+|   |   |   |   +---mergeDebugJniLibFolders
+|   |   |   |   +---mergeDebugShaders
+|   |   |   |   \---packageDebugAssets
+|   |   |   +---javac
+|   |   |   |   \---debug
+|   |   |   |       \---classes
+|   |   |   |           \---com
+|   |   |   |               \---pichillilorenzo
+|   |   |   |                   \---flutter_inappwebview_android
+|   |   |   |                       +---chrome_custom_tabs
+|   |   |   |                       +---content_blocker
+|   |   |   |                       +---credential_database
+|   |   |   |                       +---find_interaction
+|   |   |   |                       +---headless_in_app_webview
+|   |   |   |                       +---in_app_browser
+|   |   |   |                       +---plugin_scripts_js
+|   |   |   |                       +---print_job
+|   |   |   |                       +---process_global_config
+|   |   |   |                       +---proxy
+|   |   |   |                       +---pull_to_refresh
+|   |   |   |                       +---service_worker
+|   |   |   |                       +---tracing
+|   |   |   |                       +---types
+|   |   |   |                       \---webview
+|   |   |   |                           +---in_app_webview
+|   |   |   |                           \---web_message
+|   |   |   +---library_and_local_jars_jni
+|   |   |   |   \---debug
+|   |   |   |       \---jni
+|   |   |   +---library_art_profile
+|   |   |   |   \---debug
+|   |   |   +---library_assets
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---library_jni
+|   |   |   |   \---debug
+|   |   |   |       \---jni
+|   |   |   +---lint_publish_jar
+|   |   |   |   \---global
+|   |   |   +---local_only_symbol_list
+|   |   |   |   \---debug
+|   |   |   +---manifest_merge_blame_file
+|   |   |   |   \---debug
+|   |   |   +---merged_consumer_proguard_file
+|   |   |   |   \---debug
+|   |   |   +---merged_java_res
+|   |   |   |   \---debug
+|   |   |   +---merged_jni_libs
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---merged_manifest
+|   |   |   |   \---debug
+|   |   |   +---merged_shaders
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---navigation_json
+|   |   |   |   \---debug
+|   |   |   +---navigation_json_for_aar
+|   |   |   |   \---debug
+|   |   |   +---packaged_res
+|   |   |   |   \---debug
+|   |   |   |       +---drawable
+|   |   |   |       +---layout
+|   |   |   |       +---menu
+|   |   |   |       +---values
+|   |   |   |       \---xml
+|   |   |   +---public_res
+|   |   |   |   \---debug
+|   |   |   +---runtime_library_classes_jar
+|   |   |   |   \---debug
+|   |   |   \---symbol_list_with_package_name
+|   |   |       \---debug
+|   |   +---outputs
+|   |   |   +---aar
+|   |   |   \---logs
+|   |   \---tmp
+|   |       \---compileDebugJavaWithJavac
+|   +---flutter_plugin_android_lifecycle
+|   |   +---.transforms
+|   |   |   \---2cbe8831f2b44e41f6092f94315231ee
+|   |   |       \---transformed
+|   |   |           \---classes
+|   |   +---generated
+|   |   |   +---ap_generated_sources
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   \---res
+|   |   |       +---pngs
+|   |   |       |   \---debug
+|   |   |       \---resValues
+|   |   |           \---debug
+|   |   +---intermediates
+|   |   |   +---aapt_friendly_merged_manifests
+|   |   |   |   \---debug
+|   |   |   |       \---aapt
+|   |   |   +---aar_libs_directory
+|   |   |   |   \---debug
+|   |   |   |       \---libs
+|   |   |   +---aar_main_jar
+|   |   |   |   \---debug
+|   |   |   +---aar_metadata
+|   |   |   |   \---debug
+|   |   |   +---annotations_typedef_file
+|   |   |   |   \---debug
+|   |   |   +---annotations_zip
+|   |   |   |   \---debug
+|   |   |   +---annotation_processor_list
+|   |   |   |   \---debug
+|   |   |   +---compiled_local_resources
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---compile_library_classes_jar
+|   |   |   |   \---debug
+|   |   |   +---compile_r_class_jar
+|   |   |   |   \---debug
+|   |   |   +---compile_symbol_list
+|   |   |   |   \---debug
+|   |   |   +---data_binding_layout_info_type_package
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---generated_proguard_file
+|   |   |   |   \---debug
+|   |   |   +---incremental
+|   |   |   |   +---debug
+|   |   |   |   |   \---packageDebugResources
+|   |   |   |   |       +---merged.dir
+|   |   |   |   |       \---stripped.dir
+|   |   |   |   +---debug-mergeJavaRes
+|   |   |   |   |   \---zip-cache
+|   |   |   |   +---mergeDebugJniLibFolders
+|   |   |   |   +---mergeDebugShaders
+|   |   |   |   \---packageDebugAssets
+|   |   |   +---javac
+|   |   |   |   \---debug
+|   |   |   |       \---classes
+|   |   |   |           \---io
+|   |   |   |               \---flutter
+|   |   |   |                   +---embedding
+|   |   |   |                   |   \---engine
+|   |   |   |                   |       \---plugins
+|   |   |   |                   |           \---lifecycle
+|   |   |   |                   \---plugins
+|   |   |   |                       \---flutter_plugin_android_lifecycle
+|   |   |   +---library_and_local_jars_jni
+|   |   |   |   \---debug
+|   |   |   |       \---jni
+|   |   |   +---library_art_profile
+|   |   |   |   \---debug
+|   |   |   +---library_assets
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---library_jni
+|   |   |   |   \---debug
+|   |   |   |       \---jni
+|   |   |   +---lint_publish_jar
+|   |   |   |   \---global
+|   |   |   +---local_only_symbol_list
+|   |   |   |   \---debug
+|   |   |   +---manifest_merge_blame_file
+|   |   |   |   \---debug
+|   |   |   +---merged_consumer_proguard_file
+|   |   |   |   \---debug
+|   |   |   +---merged_java_res
+|   |   |   |   \---debug
+|   |   |   +---merged_jni_libs
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---merged_manifest
+|   |   |   |   \---debug
+|   |   |   +---merged_shaders
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---navigation_json
+|   |   |   |   \---debug
+|   |   |   +---navigation_json_for_aar
+|   |   |   |   \---debug
+|   |   |   +---packaged_res
+|   |   |   |   \---debug
+|   |   |   +---public_res
+|   |   |   |   \---debug
+|   |   |   +---runtime_library_classes_jar
+|   |   |   |   \---debug
+|   |   |   \---symbol_list_with_package_name
+|   |   |       \---debug
+|   |   +---outputs
+|   |   |   +---aar
+|   |   |   \---logs
+|   |   \---tmp
+|   |       \---compileDebugJavaWithJavac
+|   +---geolocator_android
+|   |   +---.transforms
+|   |   |   \---96a5f8af19c0a7ff3cc43c5c5ee18d33
+|   |   |       \---transformed
+|   |   |           \---classes
+|   |   +---generated
+|   |   |   +---ap_generated_sources
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   \---res
+|   |   |       +---pngs
+|   |   |       |   \---debug
+|   |   |       \---resValues
+|   |   |           \---debug
+|   |   +---intermediates
+|   |   |   +---aapt_friendly_merged_manifests
+|   |   |   |   \---debug
+|   |   |   |       \---aapt
+|   |   |   +---aar_libs_directory
+|   |   |   |   \---debug
+|   |   |   |       \---libs
+|   |   |   +---aar_main_jar
+|   |   |   |   \---debug
+|   |   |   +---aar_metadata
+|   |   |   |   \---debug
+|   |   |   +---annotations_typedef_file
+|   |   |   |   \---debug
+|   |   |   +---annotations_zip
+|   |   |   |   \---debug
+|   |   |   +---annotation_processor_list
+|   |   |   |   \---debug
+|   |   |   +---compiled_local_resources
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---compile_library_classes_jar
+|   |   |   |   \---debug
+|   |   |   +---compile_r_class_jar
+|   |   |   |   \---debug
+|   |   |   +---compile_symbol_list
+|   |   |   |   \---debug
+|   |   |   +---data_binding_layout_info_type_package
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---generated_proguard_file
+|   |   |   |   \---debug
+|   |   |   +---incremental
+|   |   |   |   +---debug
+|   |   |   |   |   \---packageDebugResources
+|   |   |   |   |       +---merged.dir
+|   |   |   |   |       \---stripped.dir
+|   |   |   |   +---debug-mergeJavaRes
+|   |   |   |   |   \---zip-cache
+|   |   |   |   +---mergeDebugJniLibFolders
+|   |   |   |   +---mergeDebugShaders
+|   |   |   |   \---packageDebugAssets
+|   |   |   +---javac
+|   |   |   |   \---debug
+|   |   |   |       \---classes
+|   |   |   |           \---com
+|   |   |   |               \---baseflow
+|   |   |   |                   \---geolocator
+|   |   |   |                       +---errors
+|   |   |   |                       +---location
+|   |   |   |                       +---permission
+|   |   |   |                       \---utils
+|   |   |   +---library_and_local_jars_jni
+|   |   |   |   \---debug
+|   |   |   |       \---jni
+|   |   |   +---library_art_profile
+|   |   |   |   \---debug
+|   |   |   +---library_assets
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---library_jni
+|   |   |   |   \---debug
+|   |   |   |       \---jni
+|   |   |   +---lint_publish_jar
+|   |   |   |   \---global
+|   |   |   +---local_only_symbol_list
+|   |   |   |   \---debug
+|   |   |   +---manifest_merge_blame_file
+|   |   |   |   \---debug
+|   |   |   +---merged_consumer_proguard_file
+|   |   |   |   \---debug
+|   |   |   +---merged_java_res
+|   |   |   |   \---debug
+|   |   |   +---merged_jni_libs
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---merged_manifest
+|   |   |   |   \---debug
+|   |   |   +---merged_shaders
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---navigation_json
+|   |   |   |   \---debug
+|   |   |   +---navigation_json_for_aar
+|   |   |   |   \---debug
+|   |   |   +---packaged_res
+|   |   |   |   \---debug
+|   |   |   +---public_res
+|   |   |   |   \---debug
+|   |   |   +---runtime_library_classes_jar
+|   |   |   |   \---debug
+|   |   |   \---symbol_list_with_package_name
+|   |   |       \---debug
+|   |   +---outputs
+|   |   |   +---aar
+|   |   |   \---logs
+|   |   \---tmp
+|   |       \---compileDebugJavaWithJavac
+|   +---google_maps_flutter_android
+|   |   +---.transforms
+|   |   |   \---8ce633b4e26b03566d95939f18965710
+|   |   |       \---transformed
+|   |   |           \---classes
+|   |   +---generated
+|   |   |   +---ap_generated_sources
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   \---res
+|   |   |       +---pngs
+|   |   |       |   \---debug
+|   |   |       \---resValues
+|   |   |           \---debug
+|   |   +---intermediates
+|   |   |   +---aapt_friendly_merged_manifests
+|   |   |   |   \---debug
+|   |   |   |       \---aapt
+|   |   |   +---aar_libs_directory
+|   |   |   |   \---debug
+|   |   |   |       \---libs
+|   |   |   +---aar_main_jar
+|   |   |   |   \---debug
+|   |   |   +---aar_metadata
+|   |   |   |   \---debug
+|   |   |   +---annotations_typedef_file
+|   |   |   |   \---debug
+|   |   |   +---annotations_zip
+|   |   |   |   \---debug
+|   |   |   +---annotation_processor_list
+|   |   |   |   \---debug
+|   |   |   +---compiled_local_resources
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---compile_library_classes_jar
+|   |   |   |   \---debug
+|   |   |   +---compile_r_class_jar
+|   |   |   |   \---debug
+|   |   |   +---compile_symbol_list
+|   |   |   |   \---debug
+|   |   |   +---data_binding_layout_info_type_package
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---generated_proguard_file
+|   |   |   |   \---debug
+|   |   |   +---incremental
+|   |   |   |   +---debug
+|   |   |   |   |   \---packageDebugResources
+|   |   |   |   |       +---merged.dir
+|   |   |   |   |       \---stripped.dir
+|   |   |   |   +---debug-mergeJavaRes
+|   |   |   |   |   \---zip-cache
+|   |   |   |   +---mergeDebugJniLibFolders
+|   |   |   |   +---mergeDebugShaders
+|   |   |   |   \---packageDebugAssets
+|   |   |   +---javac
+|   |   |   |   \---debug
+|   |   |   |       \---classes
+|   |   |   |           \---io
+|   |   |   |               \---flutter
+|   |   |   |                   \---plugins
+|   |   |   |                       \---googlemaps
+|   |   |   +---library_and_local_jars_jni
+|   |   |   |   \---debug
+|   |   |   |       \---jni
+|   |   |   +---library_art_profile
+|   |   |   |   \---debug
+|   |   |   +---library_assets
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---library_jni
+|   |   |   |   \---debug
+|   |   |   |       \---jni
+|   |   |   +---lint_publish_jar
+|   |   |   |   \---global
+|   |   |   +---local_only_symbol_list
+|   |   |   |   \---debug
+|   |   |   +---manifest_merge_blame_file
+|   |   |   |   \---debug
+|   |   |   +---merged_consumer_proguard_file
+|   |   |   |   \---debug
+|   |   |   +---merged_java_res
+|   |   |   |   \---debug
+|   |   |   +---merged_jni_libs
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---merged_manifest
+|   |   |   |   \---debug
+|   |   |   +---merged_shaders
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---navigation_json
+|   |   |   |   \---debug
+|   |   |   +---navigation_json_for_aar
+|   |   |   |   \---debug
+|   |   |   +---packaged_res
+|   |   |   |   \---debug
+|   |   |   +---public_res
+|   |   |   |   \---debug
+|   |   |   +---runtime_library_classes_jar
+|   |   |   |   \---debug
+|   |   |   \---symbol_list_with_package_name
+|   |   |       \---debug
+|   |   +---outputs
+|   |   |   +---aar
+|   |   |   \---logs
+|   |   \---tmp
+|   |       \---compileDebugJavaWithJavac
+|   +---location
+|   |   +---.transforms
+|   |   |   \---786e37225d6adae8a123253c023d1e75
+|   |   |       \---transformed
+|   |   |           \---classes
+|   |   +---generated
+|   |   |   +---ap_generated_sources
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   \---res
+|   |   |       +---pngs
+|   |   |       |   \---debug
+|   |   |       \---resValues
+|   |   |           \---debug
+|   |   +---intermediates
+|   |   |   +---aapt_friendly_merged_manifests
+|   |   |   |   \---debug
+|   |   |   |       \---aapt
+|   |   |   +---aar_libs_directory
+|   |   |   |   \---debug
+|   |   |   |       \---libs
+|   |   |   +---aar_main_jar
+|   |   |   |   \---debug
+|   |   |   +---aar_metadata
+|   |   |   |   \---debug
+|   |   |   +---annotations_typedef_file
+|   |   |   |   \---debug
+|   |   |   +---annotations_zip
+|   |   |   |   \---debug
+|   |   |   +---annotation_processor_list
+|   |   |   |   \---debug
+|   |   |   +---compiled_local_resources
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---compile_library_classes_jar
+|   |   |   |   \---debug
+|   |   |   +---compile_r_class_jar
+|   |   |   |   \---debug
+|   |   |   +---compile_symbol_list
+|   |   |   |   \---debug
+|   |   |   +---data_binding_layout_info_type_package
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---generated_proguard_file
+|   |   |   |   \---debug
+|   |   |   +---incremental
+|   |   |   |   +---debug
+|   |   |   |   |   \---packageDebugResources
+|   |   |   |   |       +---merged.dir
+|   |   |   |   |       \---stripped.dir
+|   |   |   |   +---debug-mergeJavaRes
+|   |   |   |   |   \---zip-cache
+|   |   |   |   +---mergeDebugJniLibFolders
+|   |   |   |   +---mergeDebugShaders
+|   |   |   |   \---packageDebugAssets
+|   |   |   +---javac
+|   |   |   |   \---debug
+|   |   |   |       \---classes
+|   |   |   |           \---com
+|   |   |   |               \---lyokone
+|   |   |   |                   \---location
+|   |   |   +---java_res
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   |           +---com
+|   |   |   |           |   \---lyokone
+|   |   |   |           |       \---location
+|   |   |   |           \---META-INF
+|   |   |   +---library_and_local_jars_jni
+|   |   |   |   \---debug
+|   |   |   |       \---jni
+|   |   |   +---library_art_profile
+|   |   |   |   \---debug
+|   |   |   +---library_assets
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---library_jni
+|   |   |   |   \---debug
+|   |   |   |       \---jni
+|   |   |   +---lint_publish_jar
+|   |   |   |   \---global
+|   |   |   +---local_only_symbol_list
+|   |   |   |   \---debug
+|   |   |   +---manifest_merge_blame_file
+|   |   |   |   \---debug
+|   |   |   +---merged_consumer_proguard_file
+|   |   |   |   \---debug
+|   |   |   +---merged_java_res
+|   |   |   |   \---debug
+|   |   |   +---merged_jni_libs
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---merged_manifest
+|   |   |   |   \---debug
+|   |   |   +---merged_shaders
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---navigation_json
+|   |   |   |   \---debug
+|   |   |   +---navigation_json_for_aar
+|   |   |   |   \---debug
+|   |   |   +---packaged_res
+|   |   |   |   \---debug
+|   |   |   |       \---drawable
+|   |   |   +---public_res
+|   |   |   |   \---debug
+|   |   |   +---runtime_library_classes_jar
+|   |   |   |   \---debug
+|   |   |   \---symbol_list_with_package_name
+|   |   |       \---debug
+|   |   +---kotlin
+|   |   |   \---compileDebugKotlin
+|   |   |       +---cacheable
+|   |   |       |   \---caches-jvm
+|   |   |       |       +---inputs
+|   |   |       |       +---jvm
+|   |   |       |       |   \---kotlin
+|   |   |       |       \---lookups
+|   |   |       +---classpath-snapshot
+|   |   |       \---local-state
+|   |   +---outputs
+|   |   |   +---aar
+|   |   |   \---logs
+|   |   \---tmp
+|   |       +---compileDebugJavaWithJavac
+|   |       \---kotlin-classes
+|   |           \---debug
+|   |               +---com
+|   |               |   \---lyokone
+|   |               |       \---location
+|   |               \---META-INF
+|   +---native_assets
+|   |   \---android
+|   +---package_info_plus
+|   |   +---.transforms
+|   |   |   \---7f7813ba6a260e0d641e552dff6b3f4f
+|   |   |       \---transformed
+|   |   |           \---classes
+|   |   +---generated
+|   |   |   \---res
+|   |   |       +---pngs
+|   |   |       |   \---debug
+|   |   |       \---resValues
+|   |   |           \---debug
+|   |   +---intermediates
+|   |   |   +---aapt_friendly_merged_manifests
+|   |   |   |   \---debug
+|   |   |   |       \---aapt
+|   |   |   +---aar_libs_directory
+|   |   |   |   \---debug
+|   |   |   |       \---libs
+|   |   |   +---aar_main_jar
+|   |   |   |   \---debug
+|   |   |   +---aar_metadata
+|   |   |   |   \---debug
+|   |   |   +---annotations_typedef_file
+|   |   |   |   \---debug
+|   |   |   +---annotations_zip
+|   |   |   |   \---debug
+|   |   |   +---annotation_processor_list
+|   |   |   |   \---debug
+|   |   |   +---compiled_local_resources
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---compile_library_classes_jar
+|   |   |   |   \---debug
+|   |   |   +---compile_r_class_jar
+|   |   |   |   \---debug
+|   |   |   +---compile_symbol_list
+|   |   |   |   \---debug
+|   |   |   +---data_binding_layout_info_type_package
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---generated_proguard_file
+|   |   |   |   \---debug
+|   |   |   +---incremental
+|   |   |   |   +---debug
+|   |   |   |   |   \---packageDebugResources
+|   |   |   |   |       +---merged.dir
+|   |   |   |   |       \---stripped.dir
+|   |   |   |   +---debug-mergeJavaRes
+|   |   |   |   |   \---zip-cache
+|   |   |   |   +---mergeDebugJniLibFolders
+|   |   |   |   +---mergeDebugShaders
+|   |   |   |   \---packageDebugAssets
+|   |   |   +---java_res
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   |           +---dev
+|   |   |   |           |   \---fluttercommunity
+|   |   |   |           |       \---plus
+|   |   |   |           |           \---packageinfo
+|   |   |   |           \---META-INF
+|   |   |   +---library_and_local_jars_jni
+|   |   |   |   \---debug
+|   |   |   |       \---jni
+|   |   |   +---library_art_profile
+|   |   |   |   \---debug
+|   |   |   +---library_assets
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---library_jni
+|   |   |   |   \---debug
+|   |   |   |       \---jni
+|   |   |   +---lint_publish_jar
+|   |   |   |   \---global
+|   |   |   +---local_only_symbol_list
+|   |   |   |   \---debug
+|   |   |   +---manifest_merge_blame_file
+|   |   |   |   \---debug
+|   |   |   +---merged_consumer_proguard_file
+|   |   |   |   \---debug
+|   |   |   +---merged_java_res
+|   |   |   |   \---debug
+|   |   |   +---merged_jni_libs
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---merged_manifest
+|   |   |   |   \---debug
+|   |   |   +---merged_shaders
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---navigation_json
+|   |   |   |   \---debug
+|   |   |   +---navigation_json_for_aar
+|   |   |   |   \---debug
+|   |   |   +---packaged_res
+|   |   |   |   \---debug
+|   |   |   +---public_res
+|   |   |   |   \---debug
+|   |   |   +---runtime_library_classes_jar
+|   |   |   |   \---debug
+|   |   |   \---symbol_list_with_package_name
+|   |   |       \---debug
+|   |   +---kotlin
+|   |   |   \---compileDebugKotlin
+|   |   |       +---cacheable
+|   |   |       |   \---caches-jvm
+|   |   |       |       +---inputs
+|   |   |       |       +---jvm
+|   |   |       |       |   \---kotlin
+|   |   |       |       \---lookups
+|   |   |       +---classpath-snapshot
+|   |   |       \---local-state
+|   |   +---outputs
+|   |   |   +---aar
+|   |   |   \---logs
+|   |   \---tmp
+|   |       \---kotlin-classes
+|   |           \---debug
+|   |               +---dev
+|   |               |   \---fluttercommunity
+|   |               |       \---plus
+|   |               |           \---packageinfo
+|   |               \---META-INF
+|   +---path_provider_android
+|   |   +---.transforms
+|   |   |   \---7a8cc135799fd117ac61d9c1ffec8db7
+|   |   |       \---transformed
+|   |   |           \---classes
+|   |   +---generated
+|   |   |   +---ap_generated_sources
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   \---res
+|   |   |       +---pngs
+|   |   |       |   \---debug
+|   |   |       \---resValues
+|   |   |           \---debug
+|   |   +---intermediates
+|   |   |   +---aapt_friendly_merged_manifests
+|   |   |   |   \---debug
+|   |   |   |       \---aapt
+|   |   |   +---aar_libs_directory
+|   |   |   |   \---debug
+|   |   |   |       \---libs
+|   |   |   +---aar_main_jar
+|   |   |   |   \---debug
+|   |   |   +---aar_metadata
+|   |   |   |   \---debug
+|   |   |   +---annotations_typedef_file
+|   |   |   |   \---debug
+|   |   |   +---annotations_zip
+|   |   |   |   \---debug
+|   |   |   +---annotation_processor_list
+|   |   |   |   \---debug
+|   |   |   +---compiled_local_resources
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---compile_library_classes_jar
+|   |   |   |   \---debug
+|   |   |   +---compile_r_class_jar
+|   |   |   |   \---debug
+|   |   |   +---compile_symbol_list
+|   |   |   |   \---debug
+|   |   |   +---data_binding_layout_info_type_package
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---generated_proguard_file
+|   |   |   |   \---debug
+|   |   |   +---incremental
+|   |   |   |   +---debug
+|   |   |   |   |   \---packageDebugResources
+|   |   |   |   |       +---merged.dir
+|   |   |   |   |       \---stripped.dir
+|   |   |   |   +---debug-mergeJavaRes
+|   |   |   |   |   \---zip-cache
+|   |   |   |   +---mergeDebugJniLibFolders
+|   |   |   |   +---mergeDebugShaders
+|   |   |   |   \---packageDebugAssets
+|   |   |   +---javac
+|   |   |   |   \---debug
+|   |   |   |       \---classes
+|   |   |   |           \---io
+|   |   |   |               \---flutter
+|   |   |   |                   \---plugins
+|   |   |   |                       \---pathprovider
+|   |   |   +---library_and_local_jars_jni
+|   |   |   |   \---debug
+|   |   |   |       \---jni
+|   |   |   +---library_art_profile
+|   |   |   |   \---debug
+|   |   |   +---library_assets
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---library_jni
+|   |   |   |   \---debug
+|   |   |   |       \---jni
+|   |   |   +---lint_publish_jar
+|   |   |   |   \---global
+|   |   |   +---local_only_symbol_list
+|   |   |   |   \---debug
+|   |   |   +---manifest_merge_blame_file
+|   |   |   |   \---debug
+|   |   |   +---merged_consumer_proguard_file
+|   |   |   |   \---debug
+|   |   |   +---merged_java_res
+|   |   |   |   \---debug
+|   |   |   +---merged_jni_libs
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---merged_manifest
+|   |   |   |   \---debug
+|   |   |   +---merged_shaders
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---navigation_json
+|   |   |   |   \---debug
+|   |   |   +---navigation_json_for_aar
+|   |   |   |   \---debug
+|   |   |   +---packaged_res
+|   |   |   |   \---debug
+|   |   |   +---public_res
+|   |   |   |   \---debug
+|   |   |   +---runtime_library_classes_jar
+|   |   |   |   \---debug
+|   |   |   \---symbol_list_with_package_name
+|   |   |       \---debug
+|   |   +---outputs
+|   |   |   +---aar
+|   |   |   \---logs
+|   |   \---tmp
+|   |       \---compileDebugJavaWithJavac
+|   +---permission_handler_android
+|   |   +---.transforms
+|   |   |   \---5af4947db1d4022368d5779499d6df71
+|   |   |       \---transformed
+|   |   |           \---classes
+|   |   +---generated
+|   |   |   +---ap_generated_sources
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   \---res
+|   |   |       +---pngs
+|   |   |       |   \---debug
+|   |   |       \---resValues
+|   |   |           \---debug
+|   |   +---intermediates
+|   |   |   +---aapt_friendly_merged_manifests
+|   |   |   |   \---debug
+|   |   |   |       \---aapt
+|   |   |   +---aar_libs_directory
+|   |   |   |   \---debug
+|   |   |   |       \---libs
+|   |   |   +---aar_main_jar
+|   |   |   |   \---debug
+|   |   |   +---aar_metadata
+|   |   |   |   \---debug
+|   |   |   +---annotations_typedef_file
+|   |   |   |   \---debug
+|   |   |   +---annotations_zip
+|   |   |   |   \---debug
+|   |   |   +---annotation_processor_list
+|   |   |   |   \---debug
+|   |   |   +---compiled_local_resources
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---compile_library_classes_jar
+|   |   |   |   \---debug
+|   |   |   +---compile_r_class_jar
+|   |   |   |   \---debug
+|   |   |   +---compile_symbol_list
+|   |   |   |   \---debug
+|   |   |   +---data_binding_layout_info_type_package
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---generated_proguard_file
+|   |   |   |   \---debug
+|   |   |   +---incremental
+|   |   |   |   +---debug
+|   |   |   |   |   \---packageDebugResources
+|   |   |   |   |       +---merged.dir
+|   |   |   |   |       \---stripped.dir
+|   |   |   |   +---debug-mergeJavaRes
+|   |   |   |   |   \---zip-cache
+|   |   |   |   +---mergeDebugJniLibFolders
+|   |   |   |   +---mergeDebugShaders
+|   |   |   |   \---packageDebugAssets
+|   |   |   +---javac
+|   |   |   |   \---debug
+|   |   |   |       \---classes
+|   |   |   |           \---com
+|   |   |   |               \---baseflow
+|   |   |   |                   \---permissionhandler
+|   |   |   +---library_and_local_jars_jni
+|   |   |   |   \---debug
+|   |   |   |       \---jni
+|   |   |   +---library_art_profile
+|   |   |   |   \---debug
+|   |   |   +---library_assets
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---library_jni
+|   |   |   |   \---debug
+|   |   |   |       \---jni
+|   |   |   +---lint_publish_jar
+|   |   |   |   \---global
+|   |   |   +---local_only_symbol_list
+|   |   |   |   \---debug
+|   |   |   +---manifest_merge_blame_file
+|   |   |   |   \---debug
+|   |   |   +---merged_consumer_proguard_file
+|   |   |   |   \---debug
+|   |   |   +---merged_java_res
+|   |   |   |   \---debug
+|   |   |   +---merged_jni_libs
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---merged_manifest
+|   |   |   |   \---debug
+|   |   |   +---merged_shaders
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---navigation_json
+|   |   |   |   \---debug
+|   |   |   +---navigation_json_for_aar
+|   |   |   |   \---debug
+|   |   |   +---packaged_res
+|   |   |   |   \---debug
+|   |   |   +---public_res
+|   |   |   |   \---debug
+|   |   |   +---runtime_library_classes_jar
+|   |   |   |   \---debug
+|   |   |   \---symbol_list_with_package_name
+|   |   |       \---debug
+|   |   +---outputs
+|   |   |   +---aar
+|   |   |   \---logs
+|   |   \---tmp
+|   |       \---compileDebugJavaWithJavac
+|   +---shared_preferences_android
+|   |   +---.transforms
+|   |   |   \---c335d60f0be50fe6dba3d4383944fbcf
+|   |   |       \---transformed
+|   |   |           \---classes
+|   |   +---generated
+|   |   |   +---ap_generated_sources
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   \---res
+|   |   |       +---pngs
+|   |   |       |   \---debug
+|   |   |       \---resValues
+|   |   |           \---debug
+|   |   +---intermediates
+|   |   |   +---aapt_friendly_merged_manifests
+|   |   |   |   \---debug
+|   |   |   |       \---aapt
+|   |   |   +---aar_libs_directory
+|   |   |   |   \---debug
+|   |   |   |       \---libs
+|   |   |   +---aar_main_jar
+|   |   |   |   \---debug
+|   |   |   +---aar_metadata
+|   |   |   |   \---debug
+|   |   |   +---annotations_typedef_file
+|   |   |   |   \---debug
+|   |   |   +---annotations_zip
+|   |   |   |   \---debug
+|   |   |   +---annotation_processor_list
+|   |   |   |   \---debug
+|   |   |   +---compiled_local_resources
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---compile_library_classes_jar
+|   |   |   |   \---debug
+|   |   |   +---compile_r_class_jar
+|   |   |   |   \---debug
+|   |   |   +---compile_symbol_list
+|   |   |   |   \---debug
+|   |   |   +---data_binding_layout_info_type_package
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---generated_proguard_file
+|   |   |   |   \---debug
+|   |   |   +---incremental
+|   |   |   |   +---debug
+|   |   |   |   |   \---packageDebugResources
+|   |   |   |   |       +---merged.dir
+|   |   |   |   |       \---stripped.dir
+|   |   |   |   +---debug-mergeJavaRes
+|   |   |   |   |   \---zip-cache
+|   |   |   |   +---mergeDebugJniLibFolders
+|   |   |   |   +---mergeDebugShaders
+|   |   |   |   \---packageDebugAssets
+|   |   |   +---javac
+|   |   |   |   \---debug
+|   |   |   |       \---classes
+|   |   |   |           \---io
+|   |   |   |               \---flutter
+|   |   |   |                   \---plugins
+|   |   |   |                       \---sharedpreferences
+|   |   |   +---java_res
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   |           +---io
+|   |   |   |           |   \---flutter
+|   |   |   |           |       \---plugins
+|   |   |   |           |           \---sharedpreferences
+|   |   |   |           \---META-INF
+|   |   |   +---library_and_local_jars_jni
+|   |   |   |   \---debug
+|   |   |   |       \---jni
+|   |   |   +---library_art_profile
+|   |   |   |   \---debug
+|   |   |   +---library_assets
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---library_jni
+|   |   |   |   \---debug
+|   |   |   |       \---jni
+|   |   |   +---lint_publish_jar
+|   |   |   |   \---global
+|   |   |   +---local_only_symbol_list
+|   |   |   |   \---debug
+|   |   |   +---manifest_merge_blame_file
+|   |   |   |   \---debug
+|   |   |   +---merged_consumer_proguard_file
+|   |   |   |   \---debug
+|   |   |   +---merged_java_res
+|   |   |   |   \---debug
+|   |   |   +---merged_jni_libs
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---merged_manifest
+|   |   |   |   \---debug
+|   |   |   +---merged_shaders
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---navigation_json
+|   |   |   |   \---debug
+|   |   |   +---navigation_json_for_aar
+|   |   |   |   \---debug
+|   |   |   +---packaged_res
+|   |   |   |   \---debug
+|   |   |   +---public_res
+|   |   |   |   \---debug
+|   |   |   +---runtime_library_classes_jar
+|   |   |   |   \---debug
+|   |   |   \---symbol_list_with_package_name
+|   |   |       \---debug
+|   |   +---kotlin
+|   |   |   \---compileDebugKotlin
+|   |   |       +---cacheable
+|   |   |       |   \---caches-jvm
+|   |   |       |       +---inputs
+|   |   |       |       +---jvm
+|   |   |       |       |   \---kotlin
+|   |   |       |       \---lookups
+|   |   |       +---classpath-snapshot
+|   |   |       \---local-state
+|   |   +---outputs
+|   |   |   +---aar
+|   |   |   \---logs
+|   |   \---tmp
+|   |       +---compileDebugJavaWithJavac
+|   |       \---kotlin-classes
+|   |           \---debug
+|   |               +---io
+|   |               |   \---flutter
+|   |               |       \---plugins
+|   |               |           \---sharedpreferences
+|   |               \---META-INF
+|   +---sqflite_android
+|   |   +---.transforms
+|   |   |   \---a333b1b121527f6d417f63a3129ce57c
+|   |   |       \---transformed
+|   |   |           \---classes
+|   |   +---generated
+|   |   |   +---ap_generated_sources
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   \---res
+|   |   |       +---pngs
+|   |   |       |   \---debug
+|   |   |       \---resValues
+|   |   |           \---debug
+|   |   +---intermediates
+|   |   |   +---aapt_friendly_merged_manifests
+|   |   |   |   \---debug
+|   |   |   |       \---aapt
+|   |   |   +---aar_libs_directory
+|   |   |   |   \---debug
+|   |   |   |       \---libs
+|   |   |   +---aar_main_jar
+|   |   |   |   \---debug
+|   |   |   +---aar_metadata
+|   |   |   |   \---debug
+|   |   |   +---annotations_typedef_file
+|   |   |   |   \---debug
+|   |   |   +---annotations_zip
+|   |   |   |   \---debug
+|   |   |   +---annotation_processor_list
+|   |   |   |   \---debug
+|   |   |   +---compiled_local_resources
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---compile_library_classes_jar
+|   |   |   |   \---debug
+|   |   |   +---compile_r_class_jar
+|   |   |   |   \---debug
+|   |   |   +---compile_symbol_list
+|   |   |   |   \---debug
+|   |   |   +---data_binding_layout_info_type_package
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---generated_proguard_file
+|   |   |   |   \---debug
+|   |   |   +---incremental
+|   |   |   |   +---debug
+|   |   |   |   |   \---packageDebugResources
+|   |   |   |   |       +---merged.dir
+|   |   |   |   |       \---stripped.dir
+|   |   |   |   +---debug-mergeJavaRes
+|   |   |   |   |   \---zip-cache
+|   |   |   |   +---mergeDebugJniLibFolders
+|   |   |   |   +---mergeDebugShaders
+|   |   |   |   \---packageDebugAssets
+|   |   |   +---javac
+|   |   |   |   \---debug
+|   |   |   |       \---classes
+|   |   |   |           \---com
+|   |   |   |               \---tekartik
+|   |   |   |                   \---sqflite
+|   |   |   |                       +---dev
+|   |   |   |                       \---operation
+|   |   |   +---library_and_local_jars_jni
+|   |   |   |   \---debug
+|   |   |   |       \---jni
+|   |   |   +---library_art_profile
+|   |   |   |   \---debug
+|   |   |   +---library_assets
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---library_jni
+|   |   |   |   \---debug
+|   |   |   |       \---jni
+|   |   |   +---lint_publish_jar
+|   |   |   |   \---global
+|   |   |   +---local_only_symbol_list
+|   |   |   |   \---debug
+|   |   |   +---manifest_merge_blame_file
+|   |   |   |   \---debug
+|   |   |   +---merged_consumer_proguard_file
+|   |   |   |   \---debug
+|   |   |   +---merged_java_res
+|   |   |   |   \---debug
+|   |   |   +---merged_jni_libs
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---merged_manifest
+|   |   |   |   \---debug
+|   |   |   +---merged_shaders
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---navigation_json
+|   |   |   |   \---debug
+|   |   |   +---navigation_json_for_aar
+|   |   |   |   \---debug
+|   |   |   +---packaged_res
+|   |   |   |   \---debug
+|   |   |   +---public_res
+|   |   |   |   \---debug
+|   |   |   +---runtime_library_classes_jar
+|   |   |   |   \---debug
+|   |   |   \---symbol_list_with_package_name
+|   |   |       \---debug
+|   |   +---outputs
+|   |   |   +---aar
+|   |   |   \---logs
+|   |   \---tmp
+|   |       \---compileDebugJavaWithJavac
+|   +---url_launcher_android
+|   |   +---.transforms
+|   |   |   \---abee8e5dc4265eeafd3186c75583fe5e
+|   |   |       \---transformed
+|   |   |           \---classes
+|   |   +---generated
+|   |   |   +---ap_generated_sources
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---res
+|   |   |   |   +---pngs
+|   |   |   |   |   \---debug
+|   |   |   |   \---resValues
+|   |   |   |       \---debug
+|   |   |   \---source
+|   |   |       \---buildConfig
+|   |   |           \---debug
+|   |   |               \---io
+|   |   |                   \---flutter
+|   |   |                       \---plugins
+|   |   |                           \---urllauncher
+|   |   +---intermediates
+|   |   |   +---aapt_friendly_merged_manifests
+|   |   |   |   \---debug
+|   |   |   |       \---aapt
+|   |   |   +---aar_libs_directory
+|   |   |   |   \---debug
+|   |   |   |       \---libs
+|   |   |   +---aar_main_jar
+|   |   |   |   \---debug
+|   |   |   +---aar_metadata
+|   |   |   |   \---debug
+|   |   |   +---annotations_typedef_file
+|   |   |   |   \---debug
+|   |   |   +---annotations_zip
+|   |   |   |   \---debug
+|   |   |   +---annotation_processor_list
+|   |   |   |   \---debug
+|   |   |   +---compiled_local_resources
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---compile_library_classes_jar
+|   |   |   |   \---debug
+|   |   |   +---compile_r_class_jar
+|   |   |   |   \---debug
+|   |   |   +---compile_symbol_list
+|   |   |   |   \---debug
+|   |   |   +---data_binding_layout_info_type_package
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---generated_proguard_file
+|   |   |   |   \---debug
+|   |   |   +---incremental
+|   |   |   |   +---debug
+|   |   |   |   |   \---packageDebugResources
+|   |   |   |   |       +---merged.dir
+|   |   |   |   |       \---stripped.dir
+|   |   |   |   +---debug-mergeJavaRes
+|   |   |   |   |   \---zip-cache
+|   |   |   |   +---mergeDebugJniLibFolders
+|   |   |   |   +---mergeDebugShaders
+|   |   |   |   \---packageDebugAssets
+|   |   |   +---javac
+|   |   |   |   \---debug
+|   |   |   |       \---classes
+|   |   |   |           \---io
+|   |   |   |               \---flutter
+|   |   |   |                   \---plugins
+|   |   |   |                       \---urllauncher
+|   |   |   +---library_and_local_jars_jni
+|   |   |   |   \---debug
+|   |   |   |       \---jni
+|   |   |   +---library_art_profile
+|   |   |   |   \---debug
+|   |   |   +---library_assets
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---library_jni
+|   |   |   |   \---debug
+|   |   |   |       \---jni
+|   |   |   +---lint_publish_jar
+|   |   |   |   \---global
+|   |   |   +---local_only_symbol_list
+|   |   |   |   \---debug
+|   |   |   +---manifest_merge_blame_file
+|   |   |   |   \---debug
+|   |   |   +---merged_consumer_proguard_file
+|   |   |   |   \---debug
+|   |   |   +---merged_java_res
+|   |   |   |   \---debug
+|   |   |   +---merged_jni_libs
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---merged_manifest
+|   |   |   |   \---debug
+|   |   |   +---merged_shaders
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---navigation_json
+|   |   |   |   \---debug
+|   |   |   +---navigation_json_for_aar
+|   |   |   |   \---debug
+|   |   |   +---packaged_res
+|   |   |   |   \---debug
+|   |   |   +---public_res
+|   |   |   |   \---debug
+|   |   |   +---runtime_library_classes_jar
+|   |   |   |   \---debug
+|   |   |   \---symbol_list_with_package_name
+|   |   |       \---debug
+|   |   +---outputs
+|   |   |   +---aar
+|   |   |   \---logs
+|   |   \---tmp
+|   |       \---compileDebugJavaWithJavac
+|   +---video_player_android
+|   |   +---.transforms
+|   |   |   \---6663e2120a1cd7d76a1b2262f274260c
+|   |   |       \---transformed
+|   |   |           \---classes
+|   |   +---generated
+|   |   |   +---ap_generated_sources
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   \---res
+|   |   |       +---pngs
+|   |   |       |   \---debug
+|   |   |       \---resValues
+|   |   |           \---debug
+|   |   +---intermediates
+|   |   |   +---aapt_friendly_merged_manifests
+|   |   |   |   \---debug
+|   |   |   |       \---aapt
+|   |   |   +---aar_libs_directory
+|   |   |   |   \---debug
+|   |   |   |       \---libs
+|   |   |   +---aar_main_jar
+|   |   |   |   \---debug
+|   |   |   +---aar_metadata
+|   |   |   |   \---debug
+|   |   |   +---annotations_typedef_file
+|   |   |   |   \---debug
+|   |   |   +---annotations_zip
+|   |   |   |   \---debug
+|   |   |   +---annotation_processor_list
+|   |   |   |   \---debug
+|   |   |   +---compiled_local_resources
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---compile_library_classes_jar
+|   |   |   |   \---debug
+|   |   |   +---compile_r_class_jar
+|   |   |   |   \---debug
+|   |   |   +---compile_symbol_list
+|   |   |   |   \---debug
+|   |   |   +---data_binding_layout_info_type_package
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---generated_proguard_file
+|   |   |   |   \---debug
+|   |   |   +---incremental
+|   |   |   |   +---debug
+|   |   |   |   |   \---packageDebugResources
+|   |   |   |   |       +---merged.dir
+|   |   |   |   |       \---stripped.dir
+|   |   |   |   +---debug-mergeJavaRes
+|   |   |   |   |   \---zip-cache
+|   |   |   |   +---mergeDebugJniLibFolders
+|   |   |   |   +---mergeDebugShaders
+|   |   |   |   \---packageDebugAssets
+|   |   |   +---javac
+|   |   |   |   \---debug
+|   |   |   |       \---classes
+|   |   |   |           \---io
+|   |   |   |               \---flutter
+|   |   |   |                   \---plugins
+|   |   |   |                       \---videoplayer
+|   |   |   +---library_and_local_jars_jni
+|   |   |   |   \---debug
+|   |   |   |       \---jni
+|   |   |   +---library_art_profile
+|   |   |   |   \---debug
+|   |   |   +---library_assets
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---library_jni
+|   |   |   |   \---debug
+|   |   |   |       \---jni
+|   |   |   +---lint_publish_jar
+|   |   |   |   \---global
+|   |   |   +---local_only_symbol_list
+|   |   |   |   \---debug
+|   |   |   +---manifest_merge_blame_file
+|   |   |   |   \---debug
+|   |   |   +---merged_consumer_proguard_file
+|   |   |   |   \---debug
+|   |   |   +---merged_java_res
+|   |   |   |   \---debug
+|   |   |   +---merged_jni_libs
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---merged_manifest
+|   |   |   |   \---debug
+|   |   |   +---merged_shaders
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---navigation_json
+|   |   |   |   \---debug
+|   |   |   +---navigation_json_for_aar
+|   |   |   |   \---debug
+|   |   |   +---packaged_res
+|   |   |   |   \---debug
+|   |   |   +---public_res
+|   |   |   |   \---debug
+|   |   |   +---runtime_library_classes_jar
+|   |   |   |   \---debug
+|   |   |   \---symbol_list_with_package_name
+|   |   |       \---debug
+|   |   +---outputs
+|   |   |   +---aar
+|   |   |   \---logs
+|   |   \---tmp
+|   |       \---compileDebugJavaWithJavac
+|   +---wakelock_plus
+|   |   +---.transforms
+|   |   |   \---14c2d8c703a2541fb7f3437c897f89d0
+|   |   |       \---transformed
+|   |   |           \---classes
+|   |   +---generated
+|   |   |   \---res
+|   |   |       +---pngs
+|   |   |       |   \---debug
+|   |   |       \---resValues
+|   |   |           \---debug
+|   |   +---intermediates
+|   |   |   +---aapt_friendly_merged_manifests
+|   |   |   |   \---debug
+|   |   |   |       \---aapt
+|   |   |   +---aar_libs_directory
+|   |   |   |   \---debug
+|   |   |   |       \---libs
+|   |   |   +---aar_main_jar
+|   |   |   |   \---debug
+|   |   |   +---aar_metadata
+|   |   |   |   \---debug
+|   |   |   +---annotations_typedef_file
+|   |   |   |   \---debug
+|   |   |   +---annotations_zip
+|   |   |   |   \---debug
+|   |   |   +---annotation_processor_list
+|   |   |   |   \---debug
+|   |   |   +---compiled_local_resources
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---compile_library_classes_jar
+|   |   |   |   \---debug
+|   |   |   +---compile_r_class_jar
+|   |   |   |   \---debug
+|   |   |   +---compile_symbol_list
+|   |   |   |   \---debug
+|   |   |   +---data_binding_layout_info_type_package
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---generated_proguard_file
+|   |   |   |   \---debug
+|   |   |   +---incremental
+|   |   |   |   +---debug
+|   |   |   |   |   \---packageDebugResources
+|   |   |   |   |       +---merged.dir
+|   |   |   |   |       \---stripped.dir
+|   |   |   |   +---debug-mergeJavaRes
+|   |   |   |   |   \---zip-cache
+|   |   |   |   +---mergeDebugJniLibFolders
+|   |   |   |   +---mergeDebugShaders
+|   |   |   |   \---packageDebugAssets
+|   |   |   +---java_res
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   |           +---dev
+|   |   |   |           |   \---fluttercommunity
+|   |   |   |           |       \---plus
+|   |   |   |           |           \---wakelock
+|   |   |   |           \---META-INF
+|   |   |   +---library_and_local_jars_jni
+|   |   |   |   \---debug
+|   |   |   |       \---jni
+|   |   |   +---library_art_profile
+|   |   |   |   \---debug
+|   |   |   +---library_assets
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---library_jni
+|   |   |   |   \---debug
+|   |   |   |       \---jni
+|   |   |   +---lint_publish_jar
+|   |   |   |   \---global
+|   |   |   +---local_only_symbol_list
+|   |   |   |   \---debug
+|   |   |   +---manifest_merge_blame_file
+|   |   |   |   \---debug
+|   |   |   +---merged_consumer_proguard_file
+|   |   |   |   \---debug
+|   |   |   +---merged_java_res
+|   |   |   |   \---debug
+|   |   |   +---merged_jni_libs
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---merged_manifest
+|   |   |   |   \---debug
+|   |   |   +---merged_shaders
+|   |   |   |   \---debug
+|   |   |   |       \---out
+|   |   |   +---navigation_json
+|   |   |   |   \---debug
+|   |   |   +---navigation_json_for_aar
+|   |   |   |   \---debug
+|   |   |   +---packaged_res
+|   |   |   |   \---debug
+|   |   |   +---public_res
+|   |   |   |   \---debug
+|   |   |   +---runtime_library_classes_jar
+|   |   |   |   \---debug
+|   |   |   \---symbol_list_with_package_name
+|   |   |       \---debug
+|   |   +---kotlin
+|   |   |   \---compileDebugKotlin
+|   |   |       +---cacheable
+|   |   |       |   \---caches-jvm
+|   |   |       |       +---inputs
+|   |   |       |       +---jvm
+|   |   |       |       |   \---kotlin
+|   |   |       |       \---lookups
+|   |   |       +---classpath-snapshot
+|   |   |       \---local-state
+|   |   +---outputs
+|   |   |   +---aar
+|   |   |   \---logs
+|   |   \---tmp
+|   |       \---kotlin-classes
+|   |           \---debug
+|   |               +---dev
+|   |               |   \---fluttercommunity
+|   |               |       \---plus
+|   |               |           \---wakelock
+|   |               \---META-INF
+|   \---webview_flutter_android
+|       +---.transforms
+|       |   \---83eda84c2b4d5771ecdde329a4c62a92
+|       |       \---transformed
+|       |           \---classes
+|       +---generated
+|       |   +---ap_generated_sources
+|       |   |   \---debug
+|       |   |       \---out
+|       |   \---res
+|       |       +---pngs
+|       |       |   \---debug
+|       |       \---resValues
+|       |           \---debug
+|       +---intermediates
+|       |   +---aapt_friendly_merged_manifests
+|       |   |   \---debug
+|       |   |       \---aapt
+|       |   +---aar_libs_directory
+|       |   |   \---debug
+|       |   |       \---libs
+|       |   +---aar_main_jar
+|       |   |   \---debug
+|       |   +---aar_metadata
+|       |   |   \---debug
+|       |   +---annotations_typedef_file
+|       |   |   \---debug
+|       |   +---annotations_zip
+|       |   |   \---debug
+|       |   +---annotation_processor_list
+|       |   |   \---debug
+|       |   +---compiled_local_resources
+|       |   |   \---debug
+|       |   |       \---out
+|       |   +---compile_library_classes_jar
+|       |   |   \---debug
+|       |   +---compile_r_class_jar
+|       |   |   \---debug
+|       |   +---compile_symbol_list
+|       |   |   \---debug
+|       |   +---data_binding_layout_info_type_package
+|       |   |   \---debug
+|       |   |       \---out
+|       |   +---generated_proguard_file
+|       |   |   \---debug
+|       |   +---incremental
+|       |   |   +---debug
+|       |   |   |   \---packageDebugResources
+|       |   |   |       +---merged.dir
+|       |   |   |       \---stripped.dir
+|       |   |   +---debug-mergeJavaRes
+|       |   |   |   \---zip-cache
+|       |   |   +---mergeDebugJniLibFolders
+|       |   |   +---mergeDebugShaders
+|       |   |   \---packageDebugAssets
+|       |   +---javac
+|       |   |   \---debug
+|       |   |       \---classes
+|       |   |           \---io
+|       |   |               \---flutter
+|       |   |                   \---plugins
+|       |   |                       \---webviewflutter
+|       |   +---java_res
+|       |   |   \---debug
+|       |   |       \---out
+|       |   |           +---io
+|       |   |           |   \---flutter
+|       |   |           |       \---plugins
+|       |   |           |           \---webviewflutter
+|       |   |           \---META-INF
+|       |   +---library_and_local_jars_jni
+|       |   |   \---debug
+|       |   |       \---jni
+|       |   +---library_art_profile
+|       |   |   \---debug
+|       |   +---library_assets
+|       |   |   \---debug
+|       |   |       \---out
+|       |   +---library_jni
+|       |   |   \---debug
+|       |   |       \---jni
+|       |   +---lint_publish_jar
+|       |   |   \---global
+|       |   +---local_only_symbol_list
+|       |   |   \---debug
+|       |   +---manifest_merge_blame_file
+|       |   |   \---debug
+|       |   +---merged_consumer_proguard_file
+|       |   |   \---debug
+|       |   +---merged_java_res
+|       |   |   \---debug
+|       |   +---merged_jni_libs
+|       |   |   \---debug
+|       |   |       \---out
+|       |   +---merged_manifest
+|       |   |   \---debug
+|       |   +---merged_shaders
+|       |   |   \---debug
+|       |   |       \---out
+|       |   +---navigation_json
+|       |   |   \---debug
+|       |   +---navigation_json_for_aar
+|       |   |   \---debug
+|       |   +---packaged_res
+|       |   |   \---debug
+|       |   +---public_res
+|       |   |   \---debug
+|       |   +---runtime_library_classes_jar
+|       |   |   \---debug
+|       |   \---symbol_list_with_package_name
+|       |       \---debug
+|       +---kotlin
+|       |   \---compileDebugKotlin
+|       |       +---cacheable
+|       |       |   \---caches-jvm
+|       |       |       +---inputs
+|       |       |       +---jvm
+|       |       |       |   \---kotlin
+|       |       |       \---lookups
+|       |       +---classpath-snapshot
+|       |       \---local-state
+|       +---outputs
+|       |   +---aar
+|       |   \---logs
+|       \---tmp
+|           +---compileDebugJavaWithJavac
+|           \---kotlin-classes
+|               \---debug
+|                   +---io
+|                   |   \---flutter
+|                   |       \---plugins
+|                   |           \---webviewflutter
+|                   \---META-INF
++---ios
+|   +---Flutter
+|   +---Runner
+|   |   +---Assets.xcassets
+|   |   |   +---AppIcon.appiconset
+|   |   |   \---LaunchImage.imageset
+|   |   \---Base.lproj
+|   +---Runner.xcodeproj
+|   |   +---project.xcworkspace
+|   |   |   \---xcshareddata
+|   |   \---xcshareddata
+|   |       \---xcschemes
+|   +---Runner.xcworkspace
+|   |   \---xcshareddata
+|   \---RunnerTests
++---lib
+|   +---conn
+|   +---finance
+|   +---home
+|   +---l10n
+|   +---lear
+|   +---scripts
+|   |   \---langchainchatbot
+|   +---set
+|   \---txtfiles
++---linux
+|   +---flutter
+|   |   \---ephemeral
+|   |       \---.plugin_symlinks
+|   |           +---package_info_plus
+|   |           +---path_provider_linux
+|   |           +---shared_preferences_linux
+|   |           +---url_launcher_linux
+|   |           \---wakelock_plus
+|   \---runner
++---macos
+|   +---Flutter
+|   |   \---ephemeral
+|   +---Runner
+|   |   +---Assets.xcassets
+|   |   |   \---AppIcon.appiconset
+|   |   +---Base.lproj
+|   |   \---Configs
+|   +---Runner.xcodeproj
+|   |   +---project.xcworkspace
+|   |   |   \---xcshareddata
+|   |   \---xcshareddata
+|   |       \---xcschemes
+|   +---Runner.xcworkspace
+|   |   \---xcshareddata
+|   \---RunnerTests
++---test
++---web
+|   \---icons
+\---windows
+    +---flutter
+    |   \---ephemeral
+    |       \---.plugin_symlinks
+    |           +---flutter_inappwebview_windows
+    |           +---geolocator_windows
+    |           +---package_info_plus
+    |           +---path_provider_windows
+    |           +---permission_handler_windows
+    |           +---shared_preferences_windows
+    |           +---url_launcher_windows
+    |           \---wakelock_plus
+    \---runner
+        \---resources

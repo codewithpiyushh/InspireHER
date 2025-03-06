@@ -1,0 +1,80 @@
+
+C:.
+|   .flutter-plugins
+|   .flutter-plugins-dependencies
+|   .gitattributes
+|   .gitignore
+|   .metadata
+|   analysis_options.yaml
+|   flutter_application_1.iml
+|   pubspec.lock
+|   pubspec.yaml
+|   README.md
+|   structure.txt
+|   
++---.dart_tool
+
++---.idea
+|
++---android
+|   
++---assets
+
++---build
+    
++---ios
+|   
++---lib
+|   |   firstpage.dart
+|   |   main.dart
+|   |   navigation_menu.dart
+|   |   
+|   +---conn
+|   |       connect.dart
+|   |       mentorfile.dart
+|   |       
+|   +---finance
+|   |       invest.dart
+|   |       
+|   +---home
+|   |       home_page.dart
+|   |       
+|   +---l10n
+|   |       app_en.arb
+|   |       app_hi.arb
+|   |       app_localizations.dart
+|   |       app_localizations_en.dart
+|   |       app_localizations_hi.dart
+|   |       
+|   +---lear
+|   |       try.dart
+|   |       
+|   +---scripts
+|   |   |   application.py
+|   |   |   chroma.sqlite3
+|   |   |   scheme.pdf
+|   |   |   setuppython.py
+|   |   |   
+|   |   \---langchainchatbot
+|   |           BRAG.py
+|   |           dairybusiness.txt
+|   |           governmentschemes.json
+|   |           scheme.pdf
+|   |           SchemesRAG.py
+|   |           tailoringbusiness.txt
+|   |           tutoringbusiness.txt
+|   |           
+|   +---set
+|   |       setup.dart
+|   |       
+|   
+|           
++---linux
+
++---macos
+
++---test
+|       widget_test.dart
+|       
++---web
+
