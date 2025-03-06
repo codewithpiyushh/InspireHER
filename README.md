@@ -7,18 +7,6 @@
 ##  Overview
 InspireHer is an AI-powered platform designed to support rural women entrepreneurs by providing financial education, mentorship, and business resources. Using RAG-LLM technology, it offers personalized guidance, connects users with government-backed financial schemes, and links them to local suppliers and experts. The platform enhances financial literacy through courses, tutorials, and AI-driven funding insights. Features like a local trade network, business location recommendations, and micro-investment opportunities enable sustainable business growth. Real-time chat, mentorship, and video sharing foster a strong support network. This repository includes the codebase, chatbot models, and financial service integrations, welcoming contributions to expand its impact.
 
-## **Index**
-
-1. [Key Features](#key-features)
-2. [Demo Video](#demo-video)
-3. [File Strcuture](#file-structure)
-4. [Getting Started](#getting-started)  
-   - [Prerequisites](#prerequisites)  
-   - [Installation](#installation) 
-5. [Architecture](#architecture)
-6. [Tech Stack](#tech-stack)
-
-
 ## **Key Features**
 | **Learn** | **Setup** | **Finance** | **Connect** |
 |----------|----------|----------|----------|
@@ -28,15 +16,17 @@ InspireHer is an AI-powered platform designed to support rural women entrepreneu
 
 
 
-<h2 align="center">🚀 Demo Video 🚀</h2>
+## **Demo Video**  
 
-<p align="center">
-  <a href="https://github.com/user-attachments/assets/d4fce425-3ee6-4276-8ec2-95c20721268a">
-    <strong>🎥 Watch the Demo Video</strong>
-  </a>
-</p>
+https://github.com/user-attachments/assets/d4fce425-3ee6-4276-8ec2-95c20721268a
 
-
+## **Tech stack**
+- **Backend**: Flask (Python)
+- **Frontend**: Flutter (Dart)
+- **AI Model**: LLM (Meta Llama 3) using LangChain & Hugging Face
+- **APIs**:
+  - **GPS-API** for location-based business recommendations
+  - **Hugging Face API** for AI model deployment
 
 
 
@@ -44,29 +34,13 @@ InspireHer is an AI-powered platform designed to support rural women entrepreneu
 
 ```
 C:.
-├── .flutter-plugins  
-├── .flutter-plugins-dependencies 
-├── .gitattributes 
-├── .gitignore 
-├── .metadata 
-├── analysis_options.yaml 
-├── flutter_application_1.iml 
-├── pubspec.lock 
-├── pubspec.yaml // Project dependencies and configurations
-├── README.md 
-├── structure.txt 
-├── .dart_tool 
-├── .idea 
-├── android 
-├── assets // Static assets like images and fonts
-├── build // Build output directory
-├── ios 
-├── lib // Dart main folder where all the files are stored
+ 
+├── lib 
 │   ├── firstpage.dart // First page of frontend 
 │   ├── main.dart // Entry point of the Flutter application
 │   ├── navigation_menu.dart // Navigation_menu used to navigate throught the application
 │   ├── conn 
-│   │   ├── connect.dart // Feature of the application that connect mentors to user
+│   │   ├── connect.dart //  connect mentors to user
 │   │   └── mentorfile.dart // Mentor Profile page
 │   ├── finance // Finance-related code
 │   │   └── invest.dart // Feature of Application that give financial and investment options
@@ -95,42 +69,25 @@ C:.
 │   │       └── tutoringbusiness.txt // Data for tutoring business
 │   └── set // Setup related code
 │       └── setup.dart // Setup configuration
-├── linux // Linux platform-specific code
-├── macos // macOS platform-specific code
-├── test // Widget tests
-│   └── widget_test.dart // Example widget test
-└── web // Web platform-specific code
 ```
 
 
 
-
-
-
-## **Getting Started**  
-
-
-
-
-
-## **Architecture**
-![Copy of EY-Detailed Presentation](https://github.com/user-attachments/assets/5643232d-48fd-45d6-9de9-deb37743a6a5)
-
-## **Tech stack**
-- **Backend**: Flask (Python)
-- **Frontend**: Flutter (Dart)
-- **AI Model**: LLM (Meta Llama 3) using LangChain & Hugging Face
-- **APIs**:
-  - **GPS-API** for location-based business recommendations
-  - **Hugging Face API** for AI model deployment
   
 ## **User Interaction**
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/e79edf4b-8a16-406d-940e-93f8e6550eb3" width="30%" />
-    <img src="https://github.com/user-attachments/assets/dd963a13-ffdd-4a7f-99b6-23730567dba7" width="30%" />
-    <img src="https://github.com/user-attachments/assets/e0693b0b-ca30-4553-93cc-1dd58d303606" width="30%" />
+    <img src="https://github.com/user-attachments/assets/e79edf4b-8a16-406d-940e-93f8e6550eb3" width="20%" />
+    <img src="https://github.com/user-attachments/assets/dd963a13-ffdd-4a7f-99b6-23730567dba7" width="20%" />
+    <img src="https://github.com/user-attachments/assets/e0693b0b-ca30-4553-93cc-1dd58d303606" width="20%" />
 </div>
 
+## **Conclusion**
+InspireHer empowers rural women entrepreneurs with financial literacy, business mentorship, and access to resources. Through AI-driven insights, local trade networks, and government-backed funding, it enables women to start, sustain, and grow their businesses. By fostering financial independence and community support, InspireHer is building a self-sustaining ecosystem of women-led businesses. 
+
+## 📢 Connect with Us  
+
+- [Piyush Singh](https://www.linkedin.com/in/piyushhh-singhh/)  
+- [Nikita Babbar](https://www.linkedin.com/in/nikita-babbar-b0291026a/)
 
 
