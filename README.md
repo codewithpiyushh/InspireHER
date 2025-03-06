@@ -1,8 +1,12 @@
 
-## <img src="https://github.com/user-attachments/assets/52f7ae17-b4fc-4a59-9e70-b23e8a24f22e" width="30" /> InspireHer: AI-Powered Financial Advisor for Rural Women
+<h2 style="display: flex; align-items: center;">
+  <img src="https://github.com/user-attachments/assets/1d13b529-cb68-4d49-9fef-22e40ab9f26a" width="95" height="60" style="margin-right: 10px;" />
+  InspireHer: AI-Powered Financial Advisor for Rural Women
+</h2>
 
 ##  Overview
-InspireHer is a transformative AI-powered platform designed to bridge the financial literacy gap for rural women. It offers personalized financial education, mentorship, and essential business tools, empowering women to start and grow their businesses with confidence. By fostering entrepreneurship and creating an inclusive ecosystem, InspireHer enables women like Lakshmi to achieve financial independence and turn their aspirations into reality.
+InspireHer is an AI-powered platform designed to support rural women entrepreneurs by providing financial education, mentorship, and business resources. Using RAG-LLM technology, it offers personalized guidance, connects users with government-backed financial schemes, and links them to local suppliers and experts. The platform enhances financial literacy through courses, tutorials, and AI-driven funding insights. Features like a local trade network, business location recommendations, and micro-investment opportunities enable sustainable business growth. Real-time chat, mentorship, and video sharing foster a strong support network. This repository includes the codebase, chatbot models, and financial service integrations, welcoming contributions to expand its impact.
+
 ## **Index**
 
 1. [Key Features](#key-features)
@@ -16,34 +20,21 @@ InspireHer is a transformative AI-powered platform designed to bridge the financ
 
 
 ## **Key Features**
-
-### 1. Learn  
-- **AI-Powered Chatbot**: RAG-based LLM chatbot developed with **LangChain**, providing step-by-step business and financial guidance.  
-- **Expert Blogs**: Insights from industry leaders on financial literacy, business strategies, and market trends.  
-- **Mentorship Program**: Personalized guidance from successful female entrepreneurs and financial advisors.  
-
-### 2. Setup   
-- **Location-Based Business Insights**: Uses **GPS-API** to recommend optimal business locations based on market demand and supplier proximity.  
-- **Resource Buying Recommendation**: Connects users with **verified suppliers** for cost-effective purchases.  
-- **Business Roadmaps**: AI-generated, step-by-step guides tailored to literacy levels and business types.  
-
-### 3. Connect   
-- **Female Entrepreneur Network**: Connects users with women in the same business sector to learn from their experiences.  
-- **Community Engagement**: Discussion forums and collaborative spaces to foster learning and business growth.  
-
-### 4. Finance   
-- **Loan Scheme Comparison**: Helps users evaluate and apply for multiple loan options simultaneously.  
-- **AI-Powered Legal & Government Insights**: Provides tailored recommendations on government funding and financial aid.  
-- **Document Checklist**: Step-by-step guidance on required documents for seamless loan applications.  
-- **Budgeting & Analytics Tools**: Helps users track expenses, plan finances, and ensure business sustainability.  
-
-## **Demo Video**  
+| **Learn** | **Setup** | **Finance** | **Connect** |
+|----------|----------|----------|----------|
+| **RAG-LLM Based Chatbot**: Provides personalized, business-specific financial education with step-by-step guidance based on the selected business type. | **Business Location Recommendations**: Uses GPS data to recommend optimal business locations based on local market demand, supply, and competition. | **AI-Powered Government Insights**: Chatbot trained on various government schemes, delivering personalized funding advice and eligibility criteria to help users maximize benefits. | **Mentorship Connections**: Connects users with experienced local female entrepreneurs from similar businesses and experts for business guidance. |
+| **Delivers Actionable Insights**: Offers practical knowledge for business success. | **Resource Buying Recommendation**: Users can select necessary resources, and InspireHer connects them with nearby verified suppliers at competitive prices while also displaying their locations. | **Women-Centric Loan & Financial Schemes**: Connects women entrepreneurs to government-backed loan schemes, enabling them to explore options, check eligibility, and directly access financial institutions. | **Upload Images and Videos**: Enables women to share success stories and strategies through videos and images. |
+| **Domain-Led Courses & Blogs by Experts**: Simplifies essential financial concepts with tutorials, interactive roadmaps, and engaging videos to empower smarter decision-making. | **Local Trade Network**: Creates a self-sustaining economy by linking users with local suppliers based on demand and supply, ensuring easy access to affordable resources. | **Micro-Investment Opportunities**: Empowers users to make small, impactful investments to grow their businesses sustainably. | **Chat Section**: Supports real-time communication for collaboration, mentorship, and instant query resolution. |
 
 
 
+<h2 align="center">🚀 Demo Video 🚀</h2>
 
-https://github.com/user-attachments/assets/d4fce425-3ee6-4276-8ec2-95c20721268a
-
+<p align="center">
+  <a href="https://github.com/user-attachments/assets/d4fce425-3ee6-4276-8ec2-95c20721268a">
+    <strong>🎥 Watch the Demo Video</strong>
+  </a>
+</p>
 
 
 
