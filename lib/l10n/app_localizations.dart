@@ -95,7 +95,8 @@ abstract class AppLocalizations {
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
     Locale('en'),
-    Locale('hi')
+    Locale('hi'),
+    Locale('ta')
   ];
 
   /// No description provided for @title1.
@@ -158,15 +159,8 @@ abstract class AppLocalizations {
   /// **'Deepak Kumar'**
   String get author5;
 
-  String get nameNeeta;
-
-  String get namenikita;
-
-  String get namemanya;
-
-  String get nameshagun;
-
   String get learnTitle;
+  String get nameNeeta;
 
   String get writeMessage;
   String get financialCourses;
@@ -232,11 +226,100 @@ abstract class AppLocalizations {
   String get supermarket;
   String get convenience;
   String get search;
+  String get select_business;
+  String get select_language;
   String get home;
   String get connecting;
   String get Learning;
   String get setuping;
   String get financing;
+  String get introductionToBusiness;
+  String get hintText;
+  String get quick;
+  String get courses;
+  String get forms;
+  String get invest;
+  String get nameNikita;
+  String get nameManya;
+  String get nameShagun;
+  String get cattleFeedingGuide;
+  String get cattleFeedingContent;
+  String get grass;
+  String get grassDescription;
+  String get hay;
+  String get twoDaysAgo;
+
+  String get oneDayAgo;
+  String get npddTitle;
+  String get npddContent;
+  String get npddPoint1;
+  String get npddPoint2;
+  String get npddPoint3;
+  String get suppliers;
+  String get cattles;
+  String get containers;
+  String get milkCoolers;
+  String get packaging;
+  String get transportation;
+  String get fooder;
+
+  String get sureshCattle;
+  String get sureshCattleDesc;
+  String get maheshCattles;
+  String get maheshCattlesDesc;
+  String get rajeshLivestock;
+  String get rajeshLivestockDesc;
+  String get vikramDairyFarms;
+  String get vikramDairyFarmsDesc;
+
+  String get fashionTrends;
+  String get fashionTrendsDesc;
+  String get wearWellLtd;
+  String get wearWellLtdDesc;
+  String get styleHub;
+  String get styleHubDesc;
+  String get eliteFabrics;
+  String get eliteFabricsDesc;
+
+  String get homeStyleFurnishings;
+  String get homeStyleFurnishingsDesc;
+  String get woodCrafters;
+  String get woodCraftersDesc;
+  String get elegantLiving;
+  String get elegantLivingDesc;
+  String get timberArtisans;
+  String get timberArtisansDesc;
+
+  String get motherMilkPackagers;
+  String get motherMilkPackagersDesc;
+  String get rutuPackagers;
+  String get rutuPackagersDesc;
+  String get purePackDairy;
+  String get purePackDairyDesc;
+  String get ecoWrapSolutions;
+  String get ecoWrapSolutionsDesc;
+
+  String get speedyLogistics;
+  String get speedyLogisticsDesc;
+  String get safeHaulMovers;
+  String get safeHaulMoversDesc;
+  String get swiftTransit;
+  String get swiftTransitDesc;
+  String get guardianFreight;
+  String get guardianFreightDesc;
+
+  String get greenHarvest;
+  String get greenHarvestDesc;
+  String get agroFeedSupply;
+  String get agroFeedSupplyDesc;
+  String get freshGraze;
+  String get freshGrazeDesc;
+  String get nutriFeedSolutions;
+  String get nutriFeedSolutionsDesc;
+  String get whatAreYouLookingFor;
+  String get becomeasupplier;
+  String get fodder;
+  String get placestosetup;
 }
 
 class _AppLocalizationsDelegate
@@ -262,6 +345,10 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
     case 'en':
       return AppLocalizationsEn();
     case 'hi':
+      return AppLocalizationsHi();
+    case 'or':
+      return AppLocalizationsHi();
+    case 'ta':
       return AppLocalizationsHi();
   }
 

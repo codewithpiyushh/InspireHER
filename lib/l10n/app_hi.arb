@@ -19,6 +19,7 @@
   "writeMessage": "अपना संदेश लिखें",
   "financialCourses": "वित्तीय पाठ्यक्रम",
   "seeAll": "सभी देखें",
+  "quick": "त्वरित सेवा",
   "all": "सभी",
   "financialLiteracy": "वित्तीय साक्षरता",
   "microInvestment": "सूक्ष्म निवेश",
@@ -86,6 +87,122 @@
   "home": "होम",
   "connecting": "जोड़ना",
   "learning": "सीखना",
-  "setuping": "स्थापित करना",
-  "financing": "वित्त"
+  "setuping": "बाज़ार",
+  "financing": "वित्त",
+  "businessName":"लक्ष्मी",
+  "select_business": "व्यवसाय चुनें",
+  "select_language": "भाषा चुने",
+  
+  "introductionToBusiness": "{business} व्यवसाय का परिचय",
+  
+  "hintText": "अपना संदेश टाइप करें...",
+  "courses": "पाठ्यक्रम",
+  "forms": "फॉर्म",
+  "invest": "निवेश करें",
+  
+
+
+    "twoDaysAgo": "2 दिन पहले",
+    "cattleFeedingGuide": "पशु आहार गाइड",
+    "cattleFeedingContent": "पशुओं के लिए संतुलित आहार देना महत्वपूर्ण है, जिसमें आवश्यक पोषक तत्व होते हैं और जो उनके शरीर के वजन और दुग्ध उत्पादन को ध्यान में रखता है।",
+    "grass": "घास",
+    "grassDescription": "चरागाह में रहने वाले पशुओं के आहार का मुख्य घटक। घास खिलाए गए पशुओं का स्वाद अलग होता है।",
+    "hay": "सूखी घास",
+
+    "oneDayAgo": "1 दिन पहले",
+    "npddTitle": "राष्ट्रीय डेयरी विकास कार्यक्रम (NPDD)",
+    "npddContent": "भारत सरकार डेयरी फार्मिंग को समर्थन देने के लिए कई योजनाएं चलाती है, जिनमें राष्ट्रीय डेयरी विकास कार्यक्रम (NPDD), डेयरी इन्फ्रास्ट्रक्चर डेवलपमेंट फंड (DIDF), और पशुपालन इन्फ्रास्ट्रक्चर विकास फंड (AHIDF) शामिल हैं।",
+    "npddPoint1": "दूध और दुग्ध उत्पादों की गुणवत्ता बढ़ाने का लक्ष्य",
+    "npddPoint2": "संगठित दूध संग्रहण, प्रसंस्करण और विपणन में वृद्धि",
+    "npddPoint3": "गुणवत्ता परीक्षण उपकरण और प्राथमिक चिलिंग सुविधाओं के लिए आधारभूत संरचना शामिल",
+    "suppliers": "आपूर्तिकर्ता",
+  "cattles": "पशु",
+  "containers": "कंटेनर",
+  "milkCoolers": "दूध कूलर",
+  "packaging": "पैकेजिंग",
+  "transportation": "परिवहन",
+  "fooder": "चारा",
+
+  "sureshCattle": "सुरेश पशु फार्म",
+  "sureshCattleDesc": "उच्च गुणवत्ता वाले पशुओं का प्रमुख आपूर्तिकर्ता।",
+
+  "maheshCattles": "महेश पशु फार्म",
+  "maheshCattlesDesc": "सर्वश्रेष्ठ नस्ल के पशु किफायती कीमतों पर।",
+
+  "rajeshLivestock": "राजेश लाइवस्टॉक",
+  "rajeshLivestockDesc": "प्रीमियम नस्ल के पशुओं के लिए विश्वसनीय आपूर्तिकर्ता।",
+
+  "vikramDairyFarms": "विक्रम डेयरी फार्म्स",
+  "vikramDairyFarmsDesc": "स्वस्थ और उच्च उत्पादन वाले पशु बेहतरीन कीमतों पर।",
+
+  "fashionTrends": "फैशन ट्रेंड्स",
+  "fashionTrendsDesc": "स्टाइलिश और ट्रेंडी कपड़ों के आपूर्तिकर्ता।",
+
+  "wearWellLtd": "वेयर वेल लिमिटेड",
+  "wearWellLtdDesc": "गुणवत्तापूर्ण वस्त्रों के लिए विश्वसनीय ब्रांड।",
+
+  "styleHub": "स्टाइल हब",
+  "styleHubDesc": "हर उम्र के लिए फैशनेबल वस्त्र उपलब्ध।",
+
+  "eliteFabrics": "एलीट फैब्रिक्स",
+  "eliteFabricsDesc": "बढ़िया गुणवत्ता और फैशनेबल डिज़ाइन।",
+
+  "homeStyleFurnishings": "होम स्टाइल फर्निशिंग्स",
+  "homeStyleFurnishingsDesc": "अत्याधुनिक और खूबसूरत फर्नीचर।",
+
+  "woodCrafters": "वुड क्राफ्टर्स",
+  "woodCraftersDesc": "लकड़ी के शानदार उत्पाद और डिज़ाइन।",
+
+  "elegantLiving": "एलिगेंट लिविंग",
+  "elegantLivingDesc": "प्राकृतिक और आधुनिक सजावट समाधान।",
+
+  "timberArtisans": "टिंबर आर्टिसंस",
+  "timberArtisansDesc": "लकड़ी के पारंपरिक और आधुनिक शिल्प।",
+
+  "motherMilkPackagers": "मदर मिल्क पैकेजर्स",
+  "motherMilkPackagersDesc": "दूध पैकेजिंग में विशेषज्ञ।",
+
+  "rutuPackagers": "रुतु पैकेजर्स",
+  "rutuPackagersDesc": "बेहतरीन पैकेजिंग सामग्री के विशेषज्ञ।",
+
+  "purePackDairy": "प्योर पैक डेयरी",
+  "purePackDairyDesc": "स्वच्छ और सुरक्षित दूध पैकेजिंग।",
+
+  "ecoWrapSolutions": "ईको रैप सॉल्यूशंस",
+  "ecoWrapSolutionsDesc": "पर्यावरण के अनुकूल पैकेजिंग समाधान।",
+
+  "speedyLogistics": "स्पीडी लॉजिस्टिक्स",
+  "speedyLogisticsDesc": "तेजी और सुरक्षा के साथ वितरण।",
+
+  "safeHaulMovers": "सेफ हॉल मूवर्स",
+  "safeHaulMoversDesc": "सुरक्षित और विश्वसनीय माल ढुलाई सेवा।",
+
+  "swiftTransit": "स्विफ्ट ट्रांज़िट",
+  "swiftTransitDesc": "तीव्र और कुशल परिवहन सेवाएँ।",
+
+  "guardianFreight": "गार्डियन फ्रेट",
+  "guardianFreightDesc": "भरोसेमंद और समय पर डिलीवरी।",
+
+  "greenHarvest": "ग्रीन हार्वेस्ट",
+  "greenHarvestDesc": "सर्वश्रेष्ठ गुणवत्ता का प्राकृतिक चारा।",
+
+  "agroFeedSupply": "एग्रो फीड सप्लाई",
+  "agroFeedSupplyDesc": "पशु आहार और पोषण का प्रमुख स्रोत।",
+
+  "freshGraze": "फ्रेश ग्रेज़",
+  "freshGrazeDesc": "ताजा और पौष्टिक चारे की आपूर्ति।",
+
+  "nutriFeedSolutions": "न्यूट्री फीड सॉल्यूशंस",
+  "nutriFeedSolutionsDesc": "पशुओं के लिए संपूर्ण पोषण समाधान।",
+  "whatAreYouLookingFor": "तुम क्या ढूंढ रहे हो",
+  "becomeasupplier": "आपूर्तिकर्ता बनें",
+  "fodder": "चारा",
+  "placestosetup": "अपना व्यवसाय स्थापित करने के स्थान"
+
+  
+  
+  
+  
+  
+  
 }

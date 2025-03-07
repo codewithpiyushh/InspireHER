@@ -25,7 +25,8 @@ def find_nearby_shops():
         data = request.get_json()  # Get JSON data from Flutter
         latitude = data.get("latitude")
         longitude = data.get("longitude")
-        business_type = data.get("business", "dairy") # Get business type
+        business_type = data.get("business")
+        print(data)# Get business type
 
         if not latitude or not longitude:
             return jsonify({"error": "Missing latitude or longitude"}), 400
@@ -33,9 +34,9 @@ def find_nearby_shops():
         overpass_query = f"""
         [out:json];
         (
-            node(around:5000,{latitude},{longitude})["shop"="{business_type}"];
-            way(around:5000,{latitude},{longitude})["shop"="{business_type}"];
-            relation(around:5000,{latitude},{longitude})["shop"="{business_type}"];
+            node(around:10000,{latitude},{longitude})["shop"="{business_type}"];
+            way(around:10000,{latitude},{longitude})["shop"="{business_type}"];
+            relation(around:10000,{latitude},{longitude})["shop"="{business_type}"];
         );
         out body;
         >;

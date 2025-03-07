@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:get/get.dart';
 import 'navigation_menu.dart';
+import '../l10n/app_localizations.dart';
 
 class FrontPage extends StatefulWidget {
   const FrontPage({super.key});
@@ -12,14 +13,8 @@ class FrontPage extends StatefulWidget {
 
 class _FrontPageState extends State<FrontPage> {
   String selectedLanguage = 'en_US';
-  String selectedBusiness = 'Dairy'; // Default business
-
-  final List<String> businesses = [
-    'Dairy/डेरी',
-    'Bakery/बेकरी',
-    'SuperMarket/सुपरमार्केट',
-    'Convenience/सुविधा'
-  ];
+  String selectedBusiness = 'dairy'; // Default business
+  List<String> businesses = [];
 
   final List<IconData> businessIcons = [
     Icons.inventory_2,
@@ -34,12 +29,31 @@ class _FrontPageState extends State<FrontPage> {
     loadPreferences();
   }
 
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      loadLocalizedBusinesses();
+    });
+  }
+
   // ✅ Load saved preferences for language & business type
   Future<void> loadPreferences() async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
     setState(() {
       selectedLanguage = prefs.getString('selected_language') ?? 'en_US';
-      selectedBusiness = prefs.getString('selected_business') ?? 'Dairy';
+      selectedBusiness = prefs.getString('selected_business') ?? 'dairy';
+    });
+  }
+
+  void loadLocalizedBusinesses() {
+    setState(() {
+      businesses = [
+        AppLocalizations.of(context)?.dairy ?? "dairy",
+        AppLocalizations.of(context)?.bakery ?? "Bakery",
+        AppLocalizations.of(context)?.supermarket ?? "Supermarket",
+        AppLocalizations.of(context)?.convenience ?? "Convenience",
+      ];
     });
   }
 
@@ -53,29 +67,35 @@ class _FrontPageState extends State<FrontPage> {
   Future<void> saveSelectedBusiness(String business) async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
     await prefs.setString('selected_business', business);
+    print("Saved Business: $business"); // Debugging log
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Select Language & Business')),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
-              'Select Language/भाषा चुने:',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            const SizedBox(height: 60),
+            Text(
+              AppLocalizations.of(context)?.select_language ??
+                  'Select Language',
+              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 10),
 
             // ✅ Language Dropdown
             DropdownButton<String>(
-              value: selectedLanguage,
+              value: ['en_US', 'hi_IN', 'or', 'ta'].contains(selectedLanguage)
+                  ? selectedLanguage
+                  : 'en_US',
               items: [
                 DropdownMenuItem(value: 'en_US', child: Text('English')),
                 DropdownMenuItem(value: 'hi_IN', child: Text('हिन्दी')),
+                DropdownMenuItem(value: 'or', child: Text('ଓଡ଼ିଆ')),
+                DropdownMenuItem(value: 'ta', child: Text('தமிழ்')),
               ],
               onChanged: (String? newValue) async {
                 if (newValue != null) {
@@ -83,8 +103,16 @@ class _FrontPageState extends State<FrontPage> {
                     selectedLanguage = newValue;
                   });
                   await saveSelectedLanguage(newValue);
-                  Get.updateLocale(
-                      Locale(newValue.split('_')[0], newValue.split('_')[1]));
+
+                  // 🛠️ Handle cases where newValue has no underscore
+                  List<String> localeParts = newValue.split('_');
+                  String languageCode = localeParts[0]; // Always present
+                  String? countryCode =
+                      localeParts.length > 1 ? localeParts[1] : null;
+
+                  Get.updateLocale(countryCode != null
+                      ? Locale(languageCode, countryCode)
+                      : Locale(languageCode)); // Handle single-part locales
                 }
               },
               isExpanded: true,
@@ -92,9 +120,10 @@ class _FrontPageState extends State<FrontPage> {
 
             const SizedBox(height: 40),
 
-            const Text(
-              'Select Business Type/व्यवसाय चुनें:',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            Text(
+              AppLocalizations.of(context)?.select_business ??
+                  'Select Business',
+              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 20),
 

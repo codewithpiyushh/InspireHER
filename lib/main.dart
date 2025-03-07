@@ -5,7 +5,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'l10n/app_localizations.dart'; // Correct import
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -21,6 +21,8 @@ class MyApp extends StatelessWidget {
       supportedLocales: [
         Locale('en'), // English
         Locale('hi'), // Hindi
+        Locale('or'), // Hindi
+        Locale('ta'), // Hindi
       ],
 
       localizationsDelegates: [

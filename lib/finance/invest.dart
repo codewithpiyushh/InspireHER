@@ -3,7 +3,7 @@ import 'dart:math';
 import '../l10n/app_localizations.dart';
 
 class FinancePage extends StatefulWidget {
-  const FinancePage({Key? key}) : super(key: key);
+  const FinancePage({super.key});
 
   @override
   _FinancePageState createState() => _FinancePageState();
@@ -278,12 +278,12 @@ class SchemeCard extends StatelessWidget {
   final String interest;
 
   const SchemeCard({
-    Key? key,
+    super.key,
     required this.icon,
     required this.name,
     required this.maxLoan,
     required this.interest,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -370,12 +370,12 @@ class InvestmentCard extends StatelessWidget {
   final String duration;
 
   const InvestmentCard({
-    Key? key,
+    super.key,
     required this.name,
     required this.returns,
     required this.minAmount,
     required this.duration,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
-import 'conn/connect.dart'; // Import Connection Page
+import 'conn/connection.dart'; // Import Connection Page
 import 'lear/try.dart'; // Import Learning Page
-import 'set/setup.dart'; // Import Setup Page
+import 'set/marketplace.dart'; // Import Setup Page
 import 'finance/invest.dart'; // Import Finance Page
-import 'home/home_page.dart';
+import 'home/home_page2.dart';
 import 'l10n/app_localizations.dart';
 
 class NavigationScreen extends StatefulWidget {
@@ -18,10 +18,10 @@ class _NavigationScreenState extends State<NavigationScreen> {
   int _selectedIndex = 0; // Default page is Home
 
   final List<Widget> _pages = [
-    DairyDashboard(), // Home Page
+    Home(), // Home Page
     HomePage(), // Connection Page
     LearnScreen(), // Learning Page
-    NearbyShopsScreen(), // Setup Page (Settings)
+    HomeScreen(), // Setup Page (Settings)
     FinancePage(), // Finance Page
   ];
 
@@ -37,7 +37,8 @@ class _NavigationScreenState extends State<NavigationScreen> {
             children: [
               Icon(Icons.home,
                   size: 30, color: Color.fromARGB(255, 4, 60, 123)),
-              Text(AppLocalizations.of(context)!.home, style: TextStyle(fontSize: 12, color: Colors.black)),
+              Text(AppLocalizations.of(context)!.home,
+                  style: TextStyle(fontSize: 12, color: Colors.black)),
             ],
           ),
           Column(
@@ -61,7 +62,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
           Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Icon(Icons.location_on,
+              Icon(Icons.shopping_cart,
                   size: 30, color: Color.fromARGB(255, 4, 60, 123)),
               Text(AppLocalizations.of(context)!.setuping,
                   style: TextStyle(fontSize: 12, color: Colors.black)),

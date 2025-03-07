@@ -6,6 +6,21 @@ import 'package:http/http.dart' as http;
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/gestures.dart';
 import '../l10n/app_localizations.dart';
+// import 'package:speech_to_text/speech_to_text.dart' as stt;
+import 'package:permission_handler/permission_handler.dart';
+
+class BusinessPreferences {
+  static Future<void> saveSelectedBusiness(String business) async {
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.setString('selected_business', business);
+    print("Saved Business: $business");
+  }
+
+  static Future<String> getSelectedBusiness() async {
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
+    return prefs.getString('selected_business') ?? "Dairy";
+  }
+}
 
 class LearnScreen extends StatefulWidget {
   const LearnScreen({super.key});
@@ -14,38 +29,89 @@ class LearnScreen extends StatefulWidget {
   State<LearnScreen> createState() => _LearnScreenState();
 }
 
-Future<void> saveSelectedBusiness(String business) async {
-  final SharedPreferences prefs = await SharedPreferences.getInstance();
-  await prefs.setString('selected_business', business);
-}
-
-Future<String?> getSelectedBusiness() async {
-  final SharedPreferences prefs = await SharedPreferences.getInstance();
-  return prefs.getString('selected_business');
-}
-
 class _LearnScreenState extends State<LearnScreen> {
-  final videoURL = "https://www.youtube.com/watch?v=69dCjNmj5H0";
-  late YoutubePlayerController _controller;
-  String? videoId;
+  // Map of business types to their respective video URLs
+  final Map<String, List<String>> businessVideos = {
+    "Dairy": [
+      "https://www.youtube.com/watch?v=69dCjNmj5H0",
+      "https://www.youtube.com/watch?v=Yk5YF1gvSEA&t=1s",
+      "https://www.youtube.com/watch?v=QoBfMoVf9TE",
+    ],
+    "Bakery": [
+      "https://www.youtube.com/watch?v=s3bCFsryJDU",
+      "https://www.youtube.com/watch?v=tUNutfjJU7A",
+      "https://www.youtube.com/watch?v=tawctYpHiAI",
+    ],
+    "SuperMarket": [
+      "https://www.youtube.com/watch?v=kUDAn0xoFYI",
+      "https://www.youtube.com/watch?v=X598TwUj3Gw",
+      "https://www.youtube.com/watch?v=EdfA-owpaFo",
+    ],
+    "Convenince": [
+      "https://www.youtube.com/watch?v=X2-PF2nR47o",
+      "https://www.youtube.com/watch?v=rSlg366Jx_E",
+      "https://www.youtube.com/watch?v=COO70-9nKyY",
+    ],
+  };
 
+  late List<YoutubePlayerController> _controllers = [];
+  String _selectedBusiness = "Dairy"; // Default business
   late List<Blog> blogs;
+  List<String> businessTypes = ["Dairy", "Poultry", "Agriculture", "Fishery"];
 
   @override
   void initState() {
     super.initState();
-    videoId = YoutubePlayer.convertUrlToId(videoURL);
-    if (videoId != null) {
-      _controller = YoutubePlayerController(
-        initialVideoId: videoId!,
-        flags: const YoutubePlayerFlags(
-          autoPlay: false,
-          mute: false,
-          showLiveFullscreenButton: false,
-        ),
-      );
+    _loadSelectedBusiness();
+  }
+
+  Future<void> _loadSelectedBusiness() async {
+    final business = await BusinessPreferences.getSelectedBusiness();
+    setState(() {
+      _selectedBusiness = business;
+      _initializeVideoControllers();
+    });
+  }
+
+  void _initializeVideoControllers() {
+    // Dispose existing controllers if any
+    for (var controller in _controllers) {
+      controller.dispose();
+    }
+
+    _controllers = [];
+
+    // Get videos for the selected business
+    final videos =
+        businessVideos[_selectedBusiness] ?? businessVideos["Dairy"]!;
+
+    // Initialize controllers for each video
+    for (var videoURL in videos) {
+      final videoId = YoutubePlayer.convertUrlToId(videoURL);
+      if (videoId != null) {
+        _controllers.add(
+          YoutubePlayerController(
+            initialVideoId: videoId,
+            flags: const YoutubePlayerFlags(
+              autoPlay: false,
+              mute: false,
+              showLiveFullscreenButton: false,
+            ),
+          ),
+        );
+      }
     }
   }
+
+  // void _changeSelectedBusiness(String business) async {
+  //   if (_selectedBusiness != business) {
+  //     await BusinessPreferences.saveSelectedBusiness(business);
+  //     setState(() {
+  //       _selectedBusiness = business;
+  //       _initializeVideoControllers();
+  //     });
+  //   }
+  // }
 
   @override
   void didChangeDependencies() {
@@ -81,7 +147,9 @@ class _LearnScreenState extends State<LearnScreen> {
 
   @override
   void dispose() {
-    _controller.dispose();
+    for (var controller in _controllers) {
+      controller.dispose();
+    }
     super.dispose();
   }
 
@@ -98,11 +166,11 @@ class _LearnScreenState extends State<LearnScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      AppLocalizations.of(context)!.learnTitle,
-                      style: const TextStyle(
-                          fontSize: 24, fontWeight: FontWeight.bold),
-                    ),
+                    // Text(
+                    //   AppLocalizations.of(context)!.learnTitle,
+                    //   style: const TextStyle(
+                    //       fontSize: 24, fontWeight: FontWeight.bold),
+                    // ),
                     const SizedBox(height: 20),
                     GestureDetector(
                       onTap: () {
@@ -133,6 +201,43 @@ class _LearnScreenState extends State<LearnScreen> {
                 ),
               ),
               const SizedBox(height: 20),
+
+              // Business selector dropdown
+              // Padding(
+              //   padding: const EdgeInsets.symmetric(horizontal: 16),
+              //   child: Column(
+              //     crossAxisAlignment: CrossAxisAlignment.start,
+              //     children: [
+              //       const SizedBox(height: 8),
+              //       Container(
+              //         padding: const EdgeInsets.symmetric(horizontal: 12),
+              //         decoration: BoxDecoration(
+              //           border: Border.all(color: Colors.grey),
+              //           borderRadius: BorderRadius.circular(8),
+              //         ),
+              //         child: DropdownButton<String>(
+              //           value: _selectedBusiness,
+              //           isExpanded: true,
+              //           underline: Container(),
+              //           onChanged: (String? newValue) {
+              //             if (newValue != null) {
+              //               _changeSelectedBusiness(newValue);
+              //             }
+              //           },
+              //           items: businessTypes
+              //               .map<DropdownMenuItem<String>>((String value) {
+              //             return DropdownMenuItem<String>(
+              //               value: value,
+              //               child: Text(value),
+              //             );
+              //           }).toList(),
+              //         ),
+              //       ),
+              //     ],
+              //   ),
+              // ),
+
+              const SizedBox(height: 20),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Column(
@@ -158,40 +263,161 @@ class _LearnScreenState extends State<LearnScreen> {
                       child: Row(
                         children: [
                           _buildChip(AppLocalizations.of(context)!.all, true),
-                          _buildChip(AppLocalizations.of(context)!.financialLiteracy, false),
-                          _buildChip(AppLocalizations.of(context)!.microInvestment, false),
-                          _buildChip(AppLocalizations.of(context)!.creditUse, false),
+                          _buildChip(
+                              AppLocalizations.of(context)!.financialLiteracy,
+                              false),
+                          _buildChip(
+                              AppLocalizations.of(context)!.microInvestment,
+                              false),
+                          _buildChip(
+                              AppLocalizations.of(context)!.creditUse, false),
                         ],
                       ),
                     ),
                   ],
                 ),
               ),
+
               const SizedBox(height: 20),
-              if (videoId != null)
+
+              // Video section with multiple videos
+              if (_controllers.isNotEmpty)
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(12),
-                        child: YoutubePlayer(
-                          controller: _controller,
-                          showVideoProgressIndicator: true,
-                          progressIndicatorColor: Colors.amber,
-                          progressColors: const ProgressBarColors(
-                            playedColor: Colors.amber,
-                            handleColor: Colors.amberAccent,
-                          ),
-                          onReady: () {
-                            print('Player is ready.');
-                          },
-                        ),
+                      Text(
+                        "$_selectedBusiness Videos",
+                        style: const TextStyle(
+                            fontSize: 18, fontWeight: FontWeight.bold),
                       ),
+                      const SizedBox(height: 12),
+
+                      // Main video
+                      if (_controllers.isNotEmpty)
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(12),
+                              child: YoutubePlayer(
+                                controller: _controllers[0],
+                                showVideoProgressIndicator: true,
+                                progressIndicatorColor: Colors.amber,
+                                progressColors: const ProgressBarColors(
+                                  playedColor: Colors.amber,
+                                  handleColor: Colors.amberAccent,
+                                ),
+                                onReady: () {
+                                  print('Main player is ready.');
+                                },
+                              ),
+                            ),
+                            const SizedBox(height: 8),
+                            Text(
+                              AppLocalizations.of(context)!
+                                  .introductionToBusiness,
+                              style:
+                                  const TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+
+                      const SizedBox(height: 20),
+
+                      // Additional videos in a row
+                      if (_controllers.length > 1)
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "More $_selectedBusiness Videos",
+                              style: const TextStyle(
+                                  fontSize: 16, fontWeight: FontWeight.bold),
+                            ),
+                            const SizedBox(height: 12),
+                            Row(
+                              children: [
+                                // Second video
+                                if (_controllers.length > 1)
+                                  Expanded(
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        ClipRRect(
+                                          borderRadius:
+                                              BorderRadius.circular(12),
+                                          child: YoutubePlayer(
+                                            controller: _controllers[1],
+                                            showVideoProgressIndicator: true,
+                                            progressIndicatorColor:
+                                                Colors.amber,
+                                            progressColors:
+                                                const ProgressBarColors(
+                                              playedColor: Colors.amber,
+                                              handleColor: Colors.amberAccent,
+                                            ),
+                                            onReady: () {
+                                              print('Second player is ready.');
+                                            },
+                                          ),
+                                        ),
+                                        const SizedBox(height: 4),
+                                        Text(
+                                          "$_selectedBusiness Tips & Tricks",
+                                          style: const TextStyle(
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                const SizedBox(width: 12),
+                                // Third video
+                                if (_controllers.length > 2)
+                                  Expanded(
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        ClipRRect(
+                                          borderRadius:
+                                              BorderRadius.circular(12),
+                                          child: YoutubePlayer(
+                                            controller: _controllers[2],
+                                            showVideoProgressIndicator: true,
+                                            progressIndicatorColor:
+                                                Colors.amber,
+                                            progressColors:
+                                                const ProgressBarColors(
+                                              playedColor: Colors.amber,
+                                              handleColor: Colors.amberAccent,
+                                            ),
+                                            onReady: () {
+                                              print('Third player is ready.');
+                                            },
+                                          ),
+                                        ),
+                                        const SizedBox(height: 4),
+                                        Text(
+                                          "Advanced $_selectedBusiness Guide",
+                                          style: const TextStyle(
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                              ],
+                            ),
+                          ],
+                        ),
                     ],
                   ),
                 ),
+
               const SizedBox(height: 20),
               BlogSection(blogs: blogs),
             ],
@@ -229,6 +455,7 @@ class _LearnScreenState extends State<LearnScreen> {
   }
 }
 
+// Keep the rest of the classes unchanged
 class ChatScreen extends StatefulWidget {
   const ChatScreen({super.key});
 
@@ -239,19 +466,16 @@ class ChatScreen extends StatefulWidget {
 class _ChatScreenState extends State<ChatScreen> {
   final TextEditingController _controller = TextEditingController();
   List<Map<String, String>> messages = [];
+  late stt.SpeechToText _speech;
+  bool _isListening = false;
 
   String getApiUrl(String message) {
-    if (message.contains("schemes") ||
-        message.contains("government") ||
-        message.contains("fund") ||
-        message.contains("loan")) {
-      return "http://192.168.1.33:5001/chat";
-    }
-    return "http://192.168.1.33:5000/chat";
+    return "http://192.168.1.4:5000/chat";
   }
 
   void _sendMessage(String message) async {
-    if (message.trim().isEmpty) return;
+    message = message.trim();
+    if (message.isEmpty) return;
 
     setState(() {
       messages.add({'sender': 'user', 'text': message});
@@ -260,24 +484,31 @@ class _ChatScreenState extends State<ChatScreen> {
     _controller.clear();
     FocusScope.of(context).unfocus();
 
+    String apiUrl = getApiUrl(message);
+    print("🚀 Sending request to: $apiUrl"); // Debugging print
+
     try {
       var response = await http
           .post(
             Uri.parse(getApiUrl(message)),
             headers: {"Content-Type": "application/json"},
-            body: jsonEncode({"query": message}),
+            body: jsonEncode({"query": message, "chat_history": []}),
           )
           .timeout(const Duration(seconds: 15));
+      print("📥 Response received: ${response.statusCode}");
 
       if (response.statusCode == 200) {
         var responseData = jsonDecode(response.body);
         String botReply =
             responseData['response']?.toString().trim() ?? "No response";
 
-        botReply = botReply.replaceAll(RegExp(r"\[.*?\]"), "");
-        botReply = botReply.replaceAll("\\n", "\n");
-        botReply = botReply.replaceAllMapped(
-            RegExp(r"\*\*(.*?)\*\*"), (match) => match.group(1)!);
+        // Clean the response
+        botReply = botReply.replaceAll(
+            RegExp(r"\[.*?\]"), ""); // Remove bracketed text
+        botReply = botReply.replaceAll(
+            "\\n", "\n"); // Ensure line breaks display properly
+        botReply = botReply.replaceAllMapped(RegExp(r"\*\*(.*?)\*\*"),
+            (match) => match.group(1)!); // Remove bold markers
 
         setState(() {
           messages.add({'sender': 'bot', 'text': botReply});
@@ -286,7 +517,7 @@ class _ChatScreenState extends State<ChatScreen> {
         setState(() {
           messages.add({
             'sender': 'bot',
-            'text': "Oops! Something went wrong. Please try again."
+            'text': "⚠️ Server error. Please try again later."
           });
         });
       }
@@ -294,9 +525,72 @@ class _ChatScreenState extends State<ChatScreen> {
       setState(() {
         messages.add({
           'sender': 'bot',
-          'text': "Connection error. Please check your internet."
+          'text': "🚨 Connection error. Check your internet connection."
         });
       });
+    }
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _speech = stt.SpeechToText();
+  }
+
+  Future<void> _requestMicrophonePermission() async {
+    PermissionStatus status = await Permission.microphone.request();
+    if (status.isGranted) {
+      _startListening();
+    } else if (status.isDenied) {
+      // Show a dialog explaining why the app needs microphone permission
+      _showPermissionDialog();
+    } else if (status.isPermanentlyDenied) {
+      // Open app settings so the user can enable the permission
+      openAppSettings();
+    }
+  }
+
+  void _showPermissionDialog() {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) => AlertDialog(
+        title: Text('Microphone Permission'),
+        content:
+            Text('This app needs microphone access to convert speech to text.'),
+        actions: <Widget>[
+          TextButton(
+            child: Text('Deny'),
+            onPressed: () => Navigator.of(context).pop(),
+          ),
+          TextButton(
+            child: Text('Settings'),
+            onPressed: () {
+              Navigator.of(context).pop();
+              openAppSettings();
+            },
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _startListening() async {
+    if (!_isListening) {
+      bool available = await _speech.initialize(
+        onStatus: (val) => print('onStatus: $val'),
+        onError: (val) => print('onError: $val'),
+      );
+      if (available) {
+        setState(() => _isListening = true);
+        _speech.listen(
+          onResult: (val) => setState(() {
+            _controller.text = val.recognizedWords;
+          }),
+        );
+      }
+    } else {
+      setState(() => _isListening = false);
+      _speech.stop();
     }
   }
 
@@ -304,8 +598,9 @@ class _ChatScreenState extends State<ChatScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Chatbot'),
         backgroundColor: Colors.blueAccent,
+        toolbarHeight: 70,
+        automaticallyImplyLeading: false,
       ),
       body: Column(
         children: [
@@ -362,6 +657,12 @@ class _ChatScreenState extends State<ChatScreen> {
                       ),
                     ),
                   ),
+                ),
+                const SizedBox(width: 8),
+                FloatingActionButton(
+                  onPressed: () => _requestMicrophonePermission(),
+                  backgroundColor: Colors.blueAccent,
+                  child: Icon(_isListening ? Icons.mic : Icons.mic_none),
                 ),
                 const SizedBox(width: 8),
                 FloatingActionButton(

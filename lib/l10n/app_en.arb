@@ -32,7 +32,7 @@
   "ongoingCourse": "On Going Course",
   "askChatbot": "Ask Our chatbot",
   "businessAddress": "BBSR+3GL 4th Ln Akakapuri,Brahmapur, Odisha-760010",
-  "businessName": "Lakshmi dairy",
+  "businessName": "Lakshmi",
   "finance": "Finance",
   "loanSchemes": "Loan Schemes",
   "investmentOptions": "Investment Options",
@@ -81,7 +81,7 @@
   "message5": "Message5",
   "sheelaDevi": "Sheela Devi",
   "nearbyShops": "Nearby Shops",
-  "dairy": "Dairy",
+  "dairy": "dairy",
   "bakery": "Bakery",
   "supermarket": "Supermarket",
   "convenience": "Convenience",
@@ -89,8 +89,59 @@
   "home": "Home",
   "connecting": "Connect",
   "learning": "Learn",
-  "setuping": "Setup",
-  "financing": "Finance"
+  "setuping": "Market",
+  "financing": "Finance",
+  "select_business": "Select Business Type",
+  "select_language": "Select Language",
+  
+  "introductionToBusiness": "Introduction to {business} Business",
+  "hintText": "Type your message...",
+  "quick": "Quick Services",
+  "courses": "Courses",
+  "forms": "Forms",
+  "invest": "Invest",
+
+  "twoDaysAgo": "2d ago",
+  "cattleFeedingGuide": "Cattle Feeding Guide",
+  "cattleFeedingContent": "A cattle feeding guide includes providing a well-balanced diet with the right nutrients, and considering the animal's body weight and milk production.",
+  "grass": "Grass",
+  "grassDescription": "The main component of a pastured animal's diet. Grass-fed cattle have a distinct flavor.",
+  "hay": "Hay",
+
+  "oneDayAgo": "1d ago",
+  "npddTitle": "National Programme for Dairy Development (NPDD)",
+  "npddContent": "The Government of India has several schemes to support dairy farming, including the National Programme for Dairy Development (NPDD), the Dairy Infrastructure Development Fund (DIDF), and the Animal Husbandry Infrastructure Development Fund (AHIDF).",
+  "npddPoint1": "Aims to increase the quality of milk and milk products",
+  "npddPoint2": "Increases the share of organized milk procurement, processing, and marketing",
+  "npddPoint3": "Includes infrastructure for quality milk testing equipment and primary chilling facilities",
+  
+  "suppliers": "Suppliers",
+  "cattles": "Cattles",
+  "containers": "Containers",
+  "milkCoolers": "Milk Coolers",
+  "packaging": "Packaging",
+  "transportation": "Transportation",
+  "fooder": "Fooder",
+  "sureshCattle": "Suresh Cattle",
+  "sureshCattleDesc": "Leading supplier of high-quality cattle.",
+  "maheshCattles": "Mahesh Cattles",
+  "maheshCattlesDesc": "Best breed of cattle at affordable prices.",
+  "rajeshLivestock": "Rajesh Livestock",
+  "rajeshLivestockDesc": "Trusted provider of premium livestock breeds.",
+  "vikramDairyFarms": "Vikram Dairy Farms",
+  "vikramDairyFarmsDesc": "Healthy and high-yield cattle at great prices.",
+  "fashionTrends": "Fashion Trends",
+  "fashionTrendsDesc": "Stylish and trendy clothing supplier.",
+  "whatAreYouLookingFor": "What are you looking for",
+  "becomeasupplier": "Become a Supplier",
+  "fodder": "Fooder",
+  "placestosetup": "Places to setup your business"
+  
+  
+  
+  
+  
+  
   
 
   
